@@ -5,7 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".appViews.FirstMainActivity">
+    tools:context=".appViews.FirstMainActivity"
+    android:scrollbarThumbHorizontal="@color/black"
+    >
 
     <View
         android:id="@+id/header_title"
@@ -68,6 +70,19 @@
         android:layout_marginTop="40dp"
         android:background="#CDD6F2"
         />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/firstView"
+        app:layout_constraintRight_toRightOf="@id/firstView"
+        android:text="@string/ir_a_la_seccion"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:padding="15sp"
+        android:layout_marginBottom="4sp"
+        />
+
+
 
 
 

@@ -18,4 +18,5 @@ class FirstMainActivity : AppCompatActivity() {
         super.onDestroy()
         Log.d("FirstMainActivity","onDestroy")
         }
+
     }
