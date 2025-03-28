@@ -70,7 +70,20 @@
         android:layout_marginTop="40dp"
         android:background="#CDD6F2"
         />
+
+    <View
+        android:id="@+id/fourthView"
+        android:layout_width="320dp"
+        android:layout_height="140dp"
+        app:layout_constraintTop_toBottomOf="@id/thirdView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="40dp"
+        android:background="#CDD6F2"
+        />
+
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@id/firstView"
@@ -83,8 +96,47 @@
         android:pointerIcon="hand"
         />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/secondView"
+        app:layout_constraintRight_toRightOf="@id/secondView"
+        android:text="@string/ir_a_la_seccion"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:padding="15sp"
+        android:layout_marginBottom="4sp"
+        android:pointerIcon="hand"
+        />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/thirdView"
+        app:layout_constraintRight_toRightOf="@id/thirdView"
+        android:text="@string/ir_a_la_seccion"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:padding="15sp"
+        android:layout_marginBottom="4sp"
+        android:pointerIcon="hand"
+        />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/foButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/fourthView"
+        app:layout_constraintRight_toRightOf="@id/fourthView"
+        android:text="@string/ir_a_la_seccion"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:padding="15sp"
+        android:layout_marginBottom="4sp"
+        android:pointerIcon="hand"
+        />
 
 
 

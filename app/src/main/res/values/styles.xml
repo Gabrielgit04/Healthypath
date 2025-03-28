@@ -12,8 +12,6 @@
         <item name="colorPrimary">@color/md_cyan_700</item>
         <item name="colorPrimaryVariant">@color/md_cyan_700</item>
         <item name="colorOnPrimary">@color/white</item>
-        <!-- Elimina la linea fontFamily directa -->
-        <!-- <item name="fontFamily">sans-serif-smallcaps</item> -->
 
         <!-- Asigna el nuevo estilo de texto -->
         <item name="android:textAppearance">@style/TextAppearance.Healthypath.SmallCaps</item>
@@ -25,5 +23,7 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
+        <item name="shapeCornerFamily">rounded</item>
     </style>
 </resources>
