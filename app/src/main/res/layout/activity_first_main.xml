@@ -56,8 +56,9 @@
         app:layout_constraintLeft_toLeftOf="@id/firstView"
         android:layout_margin="20dp"
         android:text="@string/ambiente_saludable"
-        android:textColor="@color/black"
-        android:textSize="20sp"/>
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
     <View
         android:id="@+id/secondView"
         android:layout_width="320dp"
