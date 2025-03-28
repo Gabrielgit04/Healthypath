@@ -80,6 +80,7 @@
         android:textSize="17sp"
         android:padding="15sp"
         android:layout_marginBottom="4sp"
+        android:pointerIcon="hand"
         />
 
 
