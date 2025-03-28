@@ -10,13 +10,13 @@ class FirstMainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_first_main)
-        Log.d("FirstMainActivity","onCreate")
+        Log.d("FirstMainActivity", "onCreate")
 
-        }
+    }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.d("FirstMainActivity","onDestroy")
-        }
-
+        Log.d("FirstMainActivity", "onDestroy")
     }
+
+}

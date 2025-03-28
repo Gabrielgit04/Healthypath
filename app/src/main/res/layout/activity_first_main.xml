@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".appViews.FirstMainActivity">
+
     <View
         android:id="@+id/header_title"
         android:layout_width="match_parent"
@@ -13,8 +14,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:background="#087995"
-        />
+        android:background="#087995" />
 
     <TextView
         android:id="@+id/title"
@@ -30,7 +30,7 @@
         android:layout_marginEnd="16sp"
         android:textStyle="bold"
         android:textColor="@color/white"
-        android:textColorHighlight="@color/white"/>
+        android:textColorHighlight="@color/white" />
 
     <View
         android:id="@+id/firstView"
@@ -43,8 +43,8 @@
         android:background="#CDD6F2"
         android:text="@string/ambiente_saludable"
         android:textSize="30sp"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
+
     <View
         android:id="@+id/secondView"
         android:layout_width="320dp"
@@ -53,8 +53,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="40dp"
-        android:background="#CDD6F2"
-        />
+        android:background="#CDD6F2" />
+
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -68,8 +68,6 @@
         />
 
 
-
-
     <View
         android:id="@+id/thirdView"
         android:layout_width="320dp"
@@ -78,8 +76,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="40dp"
-        android:background="#CDD6F2"
-        />
+        android:background="#CDD6F2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 

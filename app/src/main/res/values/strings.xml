@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Healthypath</string>
+    <string name="app_name" />
     <string name="ambiente_saludable">Ambiente saludable</string>
     <string name="healthypath">Healthypath</string>
     <string name="ir_a_la_seccion">Ir a la seccion</string>
