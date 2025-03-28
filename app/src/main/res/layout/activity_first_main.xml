@@ -34,7 +34,8 @@
         android:textColor="@color/white"
         android:textColorHighlight="@color/white"/>
 
-    <View android:id="@+id/firstView"
+    <View
+        android:id="@+id/firstView"
         android:layout_width="320dp"
         android:layout_height="140dp"
         android:focusable="true"
