@@ -11,8 +11,7 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".appViews.FirstMainActivity"
-        >
+        tools:context=".appViews.FirstMainActivity">
 
         <View
             android:id="@+id/header_title"
@@ -34,11 +33,9 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="@id/header_title"
             app:layout_constraintBottom_toBottomOf="@id/header_title"
-            app:layout_constraintRight_toRightOf="@id/header_title"
-            android:fontFamily="sans-serif-smallcaps"
+            app:layout_constraintLeft_toLeftOf="@id/header_title"
             android:letterSpacing="0.1"
             android:textSize="26sp"
-            android:text="Healthypath"
             android:layout_marginEnd="16sp"
             android:textStyle="bold"
             android:textColor="@color/white"
@@ -58,8 +55,8 @@
 
             <ImageButton
                 android:id="@+id/firstView"
-                android:layout_width="340dp"
-                android:layout_height="178dp"
+                android:layout_width="345dp"
+                android:layout_height="195dp"
                 android:contentDescription="@string/saludseccion"
                 app:layout_constraintTop_toTopOf="@id/heredero"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -67,49 +64,50 @@
                 android:layout_marginTop="40dp"
                 android:background="@drawable/border_style"
                 android:pointerIcon="hand"
-                android:src="@mipmap/saludf"
+                android:src="@mipmap/health"
                 android:scaleType="centerCrop" />
 
             <ImageButton
                 android:id="@+id/secondView"
-                android:layout_width="340dp"
-                android:layout_height="170dp"
+                android:layout_width="345dp"
+                android:layout_height="195dp"
                 android:contentDescription="@string/nutricion"
                 app:layout_constraintTop_toBottomOf="@id/firstView"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 android:layout_marginTop="40dp"
                 android:background="@drawable/border_style"
-                android:src="@mipmap/nutrition"
+                android:src="@mipmap/newnutri"
                 android:scaleType="centerCrop" />
 
             <ImageButton
 
                 android:id="@+id/thirdView"
-                android:layout_width="337dp"
-                android:layout_height="178dp"
+                android:layout_width="345dp"
+                android:layout_height="195dp"
                 android:layout_marginTop="40dp"
                 android:background="@drawable/border_style"
                 android:contentDescription="@string/actividad"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/secondView"
-                android:src="@mipmap/activity"
+                android:src="@mipmap/activityphysique"
                 android:scaleType="centerCrop"
+                android:forceHasOverlappingRendering="true"
 
                 />
 
             <ImageButton
                 android:id="@+id/fourthView"
-                android:layout_width="340dp"
-                android:layout_height="170dp"
+                android:layout_width="345dp"
+                android:layout_height="190dp"
                 android:contentDescription="@string/sue_o"
                 app:layout_constraintTop_toBottomOf="@id/thirdView"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 android:layout_marginTop="40dp"
                 android:background="@drawable/border_style"
-                android:src="@mipmap/dreams"
+                android:src="@mipmap/dreaming"
                 android:scaleType="centerCrop" />
 
 

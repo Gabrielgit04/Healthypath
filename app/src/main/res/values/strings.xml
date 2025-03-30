@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" />
+    <string name="app_name"><b>Healthypath</b></string>
     <string name="ambiente_saludable">Ambiente saludable</string>
     <string name="healthypath">Healthypath</string>
     <string name="ir_a_la_seccion">Ir a la seccion</string>
@@ -7,4 +7,6 @@
     <string name="nutricion">Nutricion</string>
     <string name="actividad">Actividad</string>
     <string name="sue_o">Sueño</string>
+
+
 </resources>
