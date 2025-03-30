@@ -2,7 +2,6 @@ package com.unefa7mo.healthypath.nutrition
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.EditText
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
