@@ -107,7 +107,7 @@
                 app:layout_constraintRight_toRightOf="parent"
                 android:layout_marginTop="40dp"
                 android:background="@drawable/border_style"
-                android:src="@mipmap/dreaming"
+                android:src="@mipmap/sueno"
                 android:scaleType="centerCrop" />
 
 

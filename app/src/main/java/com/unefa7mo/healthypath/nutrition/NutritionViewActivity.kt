@@ -1,21 +1,44 @@
 package com.unefa7mo.healthypath.nutrition
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.util.Log
+import android.widget.EditText
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.unefa7mo.healthypath.R
+import com.unefa7mo.healthypath.appViews.FirstMainActivity
 
 class NutritionViewActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_nutrition_view)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        initcomponents()
+        pressbutton()
+
+    }
+
+    private lateinit var backbutton: ImageButton
+    private lateinit var peso: EditText
+    private lateinit var altura: EditText
+    private lateinit var submit: androidx.appcompat.widget.AppCompatButton
+
+
+    private fun initcomponents() {
+        backbutton = findViewById(R.id.backbutton)
+        peso = findViewById(R.id.peso)
+        altura = findViewById(R.id.altura)
+        submit = findViewById(R.id.submit)
+    }
+
+    private fun pressbutton() {
+        backbutton.setOnClickListener {
+            val intent = Intent(this, FirstMainActivity::class.java)
+            startActivity(intent)
+
         }
+
     }
 }

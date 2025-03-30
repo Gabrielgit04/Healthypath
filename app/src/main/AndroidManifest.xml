@@ -16,9 +16,6 @@
             android:name=".nutrition.NutritionViewActivity"
             android:exported="false" />
         <activity
-            android:name=".nutrition.secondViewActivity"
-            android:exported="false" />
-        <activity
             android:name=".appViews.FirstMainActivity"
             android:exported="true">
             <intent-filter>

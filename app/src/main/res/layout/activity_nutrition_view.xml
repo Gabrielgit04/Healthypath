@@ -12,21 +12,227 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".nutrition.NutritionViewActivity">
+<!-- Toolbar/header-->
+        <View
+            android:id="@+id/principal"
+            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:background="#053F5C"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
 
-        <TextView
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:background="#053F5C"
-        android:text="Nutrición"
-        android:textColor="@color/white"
-        android:textSize="35sp" android:fontFamily="sans-serif-smallcaps"
-        android:textAlignment="gravity"
-            android:gravity="center"
-        android:textStyle="bold"/>
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/principal"
+
+            android:text="Nutrición"
+            android:textColor="@color/white"
+            android:textSize="35sp" android:fontFamily="sans-serif-smallcaps"
+            android:textAlignment="gravity"
+                android:gravity="center"
+            android:textStyle="bold"
+            android:padding="10sp"/>
+
+        <ImageButton
+            android:id="@+id/backbutton"
+            android:layout_width="45sp"
+            android:layout_height="46sp"
+            android:background="#053F5C"
+            android:contentDescription="@string/back"
+            android:scaleType="center"
+            android:src="@mipmap/backleft"
+            app:layout_constraintBottom_toBottomOf="@id/principal"
+            app:layout_constraintLeft_toLeftOf="@id/principal"
+            app:layout_constraintTop_toTopOf="@id/principal"
+            android:layout_marginStart="10sp"
+            tools:ignore="TouchTargetSizeCheck" />
+        <!-- hasta aca es la toolbar-->
+
+        <!-- Aca comienza la box description-->
+        <View
+            android:id="@+id/description"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            app:layout_constraintTop_toBottomOf="@id/principal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/border_style"/>
+        <!-- hasta aca es la box description-->
+
+
+        <!-- aca comienza la box dates-->
+        <!-- linearlayout principal de la box dates-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/containeredit"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/description"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:background="#E3F0F0"
+                android:padding="15dp"
+            android:gravity="center">
+            <!-- header de la box dates-->
+            <TextView
+                android:id="@+id/datos"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:textAlignment="gravity"
+                android:gravity="center"
+                android:text="Ingresa tus datos:"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:background="@drawable/border_style"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:layout_marginBottom="20dp"
+                /><!-- hasta aca es la header de la box dates-->
+            <!-- linearlayout secundario de la box dates, layout de las cardviews-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                >
+                <!-- cardview masculino-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/man"
+                android:layout_width="135dp"
+                android:layout_height="60dp"
+                app:cardBackgroundColor="@color/globalcolor"
+                app:cardCornerRadius="8sp"
+                android:layout_marginEnd="6sp">
+                <!-- layout para los elementos de la cardview -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="male"
+                        android:src="@mipmap/marte"
+                        app:tint="@color/white"
+                        />
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:text="@string/male"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+                <!-- hasta aca es la cardview masculino -->
+                <!-- aca comienza la cardview femenina-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/woman"
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    app:cardBackgroundColor="#053F5C"
+                    app:cardCornerRadius="8sp"
+                    android:layout_marginStart="6sp">
+                    <!-- layout para los elementos de la cardview f-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:contentDescription="female"
+                            android:src="@mipmap/venus"
+                            app:tint="@color/white"/>
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="50dp"
+                            android:text="@string/female"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!-- hasta aca es la cardview femenina-->
+            </LinearLayout>
+            <!-- aca termina el layout de las cardviews-->
+
+            <!-- edittext de peso-->
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/peso"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20sp"
+                android:inputType="numberDecimal"
+                android:labelFor="@id/backbutton"
+                android:hint="Peso"
+                android:padding="6sp"
+                android:maxLength="3"
+                android:digits="0123456789"
+                android:background="@drawable/edittextdesign"
+
+                tools:ignore="SpeakableTextPresentCheck"
+
+                />
+            <!-- hasta aca es el edittext de peso -->
+            <!-- edittext de altura-->
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/altura"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:inputType="textCapCharacters"
+                android:labelFor="@id/backbutton"
+                android:background="@drawable/edittextdesign"
+                android:hint="Altura"
+                android:padding="6sp"
+                android:digits="0123456789"
+                android:maxLength="3"
+                tools:ignore="SpeakableTextPresentCheck" />
+        <!-- hasta es el edittext de altura-->
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <!-- hasta aca es la box dates-->
+
+
+        <!-- boton de calcular-->
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/containeredit"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:text="Calcular"
+                android:background="@drawable/newbutton"
+                android:textColor="@color/white"
+                android:width="320dp"
+                android:layout_marginTop="40sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- hasta aca es el layout principal-->
 </ScrollView>
