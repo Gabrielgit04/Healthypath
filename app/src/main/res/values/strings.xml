@@ -10,4 +10,11 @@
     <string name="back">back</string>
     <string name="male">Hombre</string>
     <string name="female">Mujer</string>
+    <string name="nutrici_n">Nutrición</string>
+    <string name="ingresa_tus_datos">Ingresa tus datos:</string>
+    <string name="hombre">male</string>
+    <string name="mujer">female</string>
+    <string name="altura">Altura</string>
+    <string name="calcular">Calcular</string>
+    <string name="peso">Peso</string>
 </resources>

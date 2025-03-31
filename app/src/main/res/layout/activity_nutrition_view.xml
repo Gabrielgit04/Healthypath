@@ -12,7 +12,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".nutrition.NutritionViewActivity">
-<!-- Toolbar/header-->
         <View
             android:id="@+id/principal"
             android:layout_height="100dp"
@@ -30,7 +29,7 @@
             app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintBottom_toBottomOf="@id/principal"
 
-            android:text="Nutrición"
+            android:text="@string/nutrici_n"
             android:textColor="@color/white"
             android:textSize="35sp" android:fontFamily="sans-serif-smallcaps"
             android:textAlignment="gravity"
@@ -52,6 +51,7 @@
             android:layout_marginStart="10sp"
             tools:ignore="TouchTargetSizeCheck" />
         <!-- hasta aca es la toolbar-->
+<!-- Toolbar/header-->
 
         <!-- Aca comienza la box description-->
         <View
@@ -87,7 +87,7 @@
                 android:layout_height="60dp"
                 android:textAlignment="gravity"
                 android:gravity="center"
-                android:text="Ingresa tus datos:"
+                android:text="@string/ingresa_tus_datos"
                 android:fontFamily="sans-serif-smallcaps"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -116,23 +116,25 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    >
+                    tools:ignore="UseCompoundDrawables">
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:contentDescription="male"
+                        android:contentDescription="@string/hombre"
                         android:src="@mipmap/marte"
                         app:tint="@color/white"
                         />
+
                     <TextView
                         android:layout_width="70dp"
                         android:layout_height="50dp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:gravity="center"
                         android:text="@string/male"
                         android:textAllCaps="true"
-                        android:textStyle="bold"
                         android:textColor="@color/white"
-                        android:fontFamily="sans-serif-smallcaps"
-                        android:gravity="center"/>
+                        android:textStyle="bold"
+                        tools:ignore="TextSizeCheck" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
                 <!-- hasta aca es la cardview masculino -->
@@ -149,11 +151,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center"
-                        >
+                        tools:ignore="UseCompoundDrawables">
                         <ImageView
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            android:contentDescription="female"
+                            android:contentDescription="@string/mujer"
                             android:src="@mipmap/venus"
                             app:tint="@color/white"/>
                         <TextView
@@ -181,7 +183,7 @@
                 android:layout_marginEnd="20sp"
                 android:inputType="numberDecimal"
                 android:labelFor="@id/backbutton"
-                android:hint="Peso"
+                android:hint="@string/peso"
                 android:padding="6sp"
                 android:maxLength="3"
                 android:digits="0123456789"
@@ -202,7 +204,7 @@
                 android:inputType="textCapCharacters"
                 android:labelFor="@id/backbutton"
                 android:background="@drawable/edittextdesign"
-                android:hint="Altura"
+                android:hint="@string/altura"
                 android:padding="6sp"
                 android:digits="0123456789"
                 android:maxLength="3"
@@ -221,7 +223,7 @@
                 app:layout_constraintTop_toBottomOf="@id/containeredit"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                android:text="Calcular"
+                android:text="@string/calcular"
                 android:background="@drawable/newbutton"
                 android:textColor="@color/white"
                 android:width="320dp"
