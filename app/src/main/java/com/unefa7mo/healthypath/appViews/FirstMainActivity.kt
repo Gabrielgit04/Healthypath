@@ -16,7 +16,7 @@ class FirstMainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_first_main)
         Log.d("FirstMainActivity", "onCreate")
 
-        val goNext = findViewById<ImageButton>(R.id.firstView)
+        val goNext = findViewById<ImageButton>(R.id.secondView)
         goNext.setOnClickListener {
             val intent = Intent(this, NutritionViewActivity::class.java)
             startActivity(intent)

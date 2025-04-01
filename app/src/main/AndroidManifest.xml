@@ -13,6 +13,9 @@
         android:theme="@style/themeApp.Healthypath"
         tools:targetApi="31">
         <activity
+            android:name=".nutrition.DialogResult"
+            android:exported="false" />
+        <activity
             android:name=".nutrition.NutritionViewActivity"
             android:exported="false" />
         <activity
