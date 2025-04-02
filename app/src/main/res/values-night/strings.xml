@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Healthypath</string>
     <string name="ambiente_saludable">Ambiente saludable</string>
+    <string name="healthypath">Healthypath</string>
+    <string name="ir_a_la_seccion">Ir a la seccion</string>
+    <string name="saludseccion">Saludseccion</string>
+    <string name="nutricion">Nutricion</string>
+    <string name="actividad">Actividad</string>
+    <string name="sue_o">Sueño</string>
+    <string name="back">back</string>
+    <string name="male">Hombre</string>
+    <string name="female">Mujer</string>
+    <string name="nutrici_n">Nutrición</string>
+    <string name="ingresa_tus_datos">Ingresa tus datos:</string>
+    <string name="hombre">male</string>
+    <string name="mujer">female</string>
+    <string name="altura">Altura</string>
+    <string name="calcular">Calcular</string>
+    <string name="peso">Peso</string>
+    <string name="descriptiontxt">Para medir el estado nutritivo en el que se encuentra una persona utilizamos el IMC. El Índice de Masa Corporal (IMC) es una medida que se utiliza para evaluar si una persona tiene un peso saludable en relación con su estatura.
+        En otras palabras, es una herramienta que relaciona el peso y la altura de una persona para estimar si está en un rango de peso adecuado.Aunque tampoco es unidad de medicion 100% precisa, es viable utilizarla.
+    </string>
+    <string name="resultados_del_calculo">Resultados del calculo</string>
+    <string name="resultadosimc">❌IMC menor a 18.5: Se considera bajo peso.</string>
+    <string name="buenpeso">✅IMC entre 18.5 y 24.9: Se considera peso saludable o normal.</string>
+    <string name="sobrepeso">❌IMC entre 25 y 29.9: Se considera sobrepeso.</string>
+    <string name="obesidad">❌IMC de 30 o más: Se considera obesidad.</string>
+
 </resources>

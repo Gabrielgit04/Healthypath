@@ -21,6 +21,9 @@
         En otras palabras, es una herramienta que relaciona el peso y la altura de una persona para estimar si está en un rango de peso adecuado.Aunque tampoco es unidad de medicion 100% precisa, es viable utilizarla.
     </string>
     <string name="resultados_del_calculo">Resultados del calculo</string>
-    <string name="resultadosimc">
-        IMC menor a 18.5: Se considera bajo peso.IMC entre 18.5 y 24.9: Se considera peso saludable o normal.IMC entre 25 y 29.9: Se considera sobrepeso.IMC de 30 o más: Se considera obesidad.</string>
+    <string name="resultadosimc">❌IMC menor a 18.5: Se considera bajo peso.</string>
+    <string name="buenpeso">✅IMC entre 18.5 y 24.9: Se considera peso saludable o normal.</string>
+    <string name="sobrepeso">❌IMC entre 25 y 29.9: Se considera sobrepeso.</string>
+    <string name="obesidad">❌IMC de 30 o más: Se considera obesidad.</string>
+
 </resources>
