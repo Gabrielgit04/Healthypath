@@ -5,8 +5,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+
 import androidx.fragment.app.DialogFragment
 import com.unefa7mo.healthypath.R
+
 
 class DialogResult : DialogFragment() {
         @SuppressLint("SuspiciousIndentation")
@@ -17,6 +19,7 @@ class DialogResult : DialogFragment() {
         ): View {
             val rootView: View = inflater.inflate(R.layout.activity_dialog_result, container, false)
                 return rootView
+
     }
 
 

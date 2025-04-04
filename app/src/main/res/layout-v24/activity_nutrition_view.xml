@@ -11,7 +11,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".nutrition.NutritionViewActivity">
+    tools:context=".nutrition.NutritionViewActivity"
+    android:animateLayoutChanges="true">
 
         <View
             android:id="@+id/principal"
@@ -51,7 +52,8 @@
             app:layout_constraintLeft_toLeftOf="@id/principal"
             app:layout_constraintTop_toTopOf="@id/principal"
             android:layout_marginStart="10sp"
-            android:pointerIcon="hand"
+            android:scaleX="1"
+            android:scaleY="1"
             tools:ignore="TouchTargetSizeCheck" />
         <!-- hasta aca es la toolbar-->
 <!-- Toolbar/header-->
@@ -60,7 +62,7 @@
         <TextView
             android:id="@+id/description"
             android:layout_width="350dp"
-            android:layout_height="200dp"
+            android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/principal"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -71,7 +73,9 @@
             android:textAlignment="textStart"
             android:textStyle="bold"
             android:letterSpacing="0.1"
-            android:background="@drawable/border_style"/>
+            android:background="@drawable/border_style"
+            android:lines="7"
+            android:ellipsize="end"/>
         <!-- hasta aca es la box description-->
 
 
@@ -235,7 +239,7 @@
                 app:layout_constraintRight_toRightOf="parent"
                 android:text="@string/calcular"
                 android:background="@drawable/newbutton"
-                android:textColor="@color/white"
+                android:textColor="#021F64"
                 android:width="320dp"
                 android:layout_marginTop="40sp"
                 android:fontFamily="sans-serif-smallcaps"
