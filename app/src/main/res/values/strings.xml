@@ -25,5 +25,6 @@
     <string name="buenpeso">✅IMC entre 18.5 y 24.9: Se considera peso saludable o normal.</string>
     <string name="sobrepeso">❌IMC entre 25 y 29.9: Se considera sobrepeso.</string>
     <string name="obesidad">❌IMC de 30 o más: Se considera obesidad.</string>
+    <string name="title_activity_main">MainActivity</string>
 
 </resources>

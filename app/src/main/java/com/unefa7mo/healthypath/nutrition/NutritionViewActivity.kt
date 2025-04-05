@@ -3,11 +3,11 @@ package com.unefa7mo.healthypath.nutrition
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.cardview.widget.CardView
 import com.unefa7mo.healthypath.R
 import com.unefa7mo.healthypath.appViews.FirstMainActivity
 
@@ -46,9 +46,17 @@ class NutritionViewActivity : AppCompatActivity() {
 
         fun calcular() {
             submit.setOnClickListener {
+                val peso = peso.text.toString().toInt()
+                val altura = altura.text.toString().toDouble()
+                val imc = peso / (altura * altura)
 
-                val dialog = DialogResult()
-                dialog.show(supportFragmentManager, "DialogResult")
+                val resultados = Bundle()
+                resultados.putDouble("imcResult", imc)
+
+                intent = Intent(this, DialogResult::class.java)
+                intent.putExtras(resultados)
+                startActivity(intent)
+
 
             }
 

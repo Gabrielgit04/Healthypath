@@ -1,26 +1,32 @@
 package com.unefa7mo.healthypath.nutrition
 
-import android.annotation.SuppressLint
+import android.app.AlertDialog
+import android.app.Dialog
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-
+import android.widget.TextView
 import androidx.fragment.app.DialogFragment
 import com.unefa7mo.healthypath.R
 
 
+
 class DialogResult : DialogFragment() {
-        @SuppressLint("SuspiciousIndentation")
-        override fun onCreateView(
-            inflater: LayoutInflater,
-            container: ViewGroup?,
-            savedInstanceState: Bundle?
-        ): View {
-            val rootView: View = inflater.inflate(R.layout.activity_dialog_result, container, false)
-                return rootView
 
+    override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
+
+
+        val result = arguments?.getDouble("imcResult")
+        if (result == null) {
+            return super.onCreateDialog(savedInstanceState)
+        }
+        val myVist = requireActivity().layoutInflater.inflate(R.layout.activity_dialog_result, null)
+        val myResult = myVist.findViewById<TextView>(R.id.result)
+        myResult.text = result.toString()
+        return AlertDialog.Builder(requireContext()).setView(myVist).create()
+
+
+            }
     }
 
 
-    }
+
+

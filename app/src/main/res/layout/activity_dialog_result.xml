@@ -110,7 +110,6 @@
         app:layout_constraintRight_toRightOf="@id/boxResult"
         app:layout_constraintBottom_toBottomOf="@id/boxResult"
         android:background="@drawable/correct"
-        android:text="18.5"
         android:textSize="40sp"
         android:padding="20dp"
         android:gravity="center"

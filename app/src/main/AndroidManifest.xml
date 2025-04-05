@@ -13,6 +13,17 @@
         android:theme="@style/themeApp.Healthypath"
         tools:targetApi="31">
         <activity
+            android:name=".activityphysique.PhysiqueActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activityphysique.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".exercise.MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main"
+            android:theme="@style/themeApp.Healthypath" />
+        <activity
             android:name=".nutrition.DialogResult"
             android:exported="false" />
         <activity
