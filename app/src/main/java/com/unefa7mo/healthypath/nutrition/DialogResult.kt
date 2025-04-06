@@ -26,18 +26,33 @@ class DialogResult : DialogFragment() {
         return AlertDialog.Builder(requireContext()).setView(myVist).create()
 
         fun changeColor(){
-            if (result >= 18.5 || result <= 24.9){
-                val boxResult = myVist.findViewById<LinearLayout>(R.id.elements)
+
+            if (result < 18.5){
+                val boxResult = myVist.findViewById<LinearLayout>(R.id.result)
+                boxResult.setBackgroundResource(R.drawable.incorrect)
+            }
+
+            else if (result >= 18.5 && result <= 24.9){
+                val boxResult = myVist.findViewById<LinearLayout>(R.id.result)
                 boxResult.setBackgroundResource(R.drawable.correct)
 
             }
-            else if(result < 18.5 || result >= 25){
-                val boxResult = myVist.findViewById<LinearLayout>(R.id.elements)
-                    boxResult.setBackgroundResource(R.drawable.incorrect)
+            else if (result >= 25 && result <= 29.9){
+                val boxResult = myVist.findViewById<LinearLayout>(R.id.result)
+                boxResult.setBackgroundResource(R.drawable.incorrect)
+            }
 
+        }
+        fun closeDialog(){
+            val accept = myVist.findViewById<TextView>(R.id.accept)
+            accept.setOnClickListener {
+                dismiss()
             }
         }
-        changeColor()
+
+            changeColor()
+            closeDialog()
+
 
             }
     }

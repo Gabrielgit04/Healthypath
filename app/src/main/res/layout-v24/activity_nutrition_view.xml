@@ -61,6 +61,7 @@
         <!-- Aca comienza la box description-->
         <TextView
             android:id="@+id/description"
+            android:fontFamily="sans-serif-smallcaps"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/principal"
@@ -71,10 +72,11 @@
             android:padding="12dp"
             android:textSize="13.5sp"
             android:textAlignment="textStart"
-            android:textStyle="bold"
+            android:textStyle="italic"
             android:letterSpacing="0.1"
+            android:textColor="@color/black"
             android:background="@drawable/border_style"
-            android:lines="7"
+            android:lines="5"
             android:ellipsize="end"/>
         <!-- hasta aca es la box description-->
 
@@ -99,11 +101,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
                 android:textAlignment="gravity"
+                android:textColor="@color/black"
                 android:gravity="center"
                 android:text="@string/ingresa_tus_datos"
                 android:fontFamily="sans-serif-smallcaps"
                 android:textSize="20sp"
-                android:textStyle="bold"
+                android:textStyle="italic"
                 android:background="@drawable/border_style"
                 android:layout_marginTop="10dp"
                 android:padding="15dp"
@@ -198,13 +201,17 @@
                 android:inputType="numberDecimal"
                 android:labelFor="@id/backbutton"
                 android:hint="@string/peso"
-                android:padding="6sp"
                 android:maxLength="3"
+                android:letterSpacing="0.1"
+                android:paddingStart="12sp"
                 android:textStyle="bold"
                 android:digits="0123456789"
+                android:fontFamily="sans-serif-smallcaps"
+                android:elegantTextHeight="true"
+                android:elevation="10dp"
                 android:background="@drawable/edittextdesign"
 
-                tools:ignore="SpeakableTextPresentCheck"
+                tools:ignore="RtlSymmetry,SpeakableTextPresentCheck"
 
                 />
             <!-- hasta aca es el edittext de peso -->
@@ -216,15 +223,20 @@
                 android:layout_marginStart="20sp"
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="20dp"
+                android:letterSpacing="0.1"
                 android:inputType="textCapCharacters"
+                android:fontFamily="sans-serif-smallcaps"
                 android:labelFor="@id/backbutton"
                 android:background="@drawable/edittextdesign"
                 android:hint="@string/altura"
-                android:padding="6sp"
                 android:digits="0123456789."
+                android:elegantTextHeight="true"
+                android:elevation="10dp"
+                android:paddingStart="12dp"
                 android:maxLength="4"
                 android:textStyle="bold"
-                tools:ignore="SpeakableTextPresentCheck" />
+
+                tools:ignore="RtlSymmetry,SpeakableTextPresentCheck" />
         <!-- hasta es el edittext de altura-->
 
         </androidx.appcompat.widget.LinearLayoutCompat>

@@ -14,11 +14,11 @@
     <string name="ingresa_tus_datos">Ingresa tus datos:</string>
     <string name="hombre">male</string>
     <string name="mujer">female</string>
-    <string name="altura">Altura</string>
+    <string name="altura">Altura…</string>
     <string name="calcular">Calcular</string>
-    <string name="peso">Peso</string>
+    <string name="peso">Peso…</string>
     <string name="descriptiontxt">Para medir el estado nutritivo en el que se encuentra una persona utilizamos el IMC. El Índice de Masa Corporal (IMC) es una medida que se utiliza para evaluar si una persona tiene un peso saludable en relación con su estatura.
-        En otras palabras, es una herramienta que relaciona el peso y la altura de una persona para estimar si está en un rango de peso adecuado.Aunque tampoco es unidad de medicion 100% precisa, es viable utilizarla.
+        Aunque tampoco es unidad de medicion 100% precisa, es viable utilizarla.
     </string>
     <string name="resultados_del_calculo">Resultados del calculo</string>
     <string name="resultadosimc">• IMC menor a 18.5: Se considera bajo peso.</string>
@@ -27,5 +27,6 @@
     <string name="obesidad">• IMC de 30 o más: Se considera obesidad.</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="tu_imc_es_de">Tu IMC es de:</string>
+    <string name="a_c_e_p_t_a_r">A c e p t a r</string>
 
 </resources>
