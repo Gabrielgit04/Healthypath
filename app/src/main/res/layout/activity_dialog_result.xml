@@ -43,17 +43,17 @@
 
         <LinearLayout
             android:id="@+id/referencia"
-            android:layout_width="330dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/principal"
+            app:layout_constraintTop_toBottomOf="@id/elements"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/boxResult"
             android:background="@drawable/datesbox"
             android:layout_marginTop="30dp"
             android:textSize="18sp"
             android:lineSpacingExtra="5dp"
             android:letterSpacing="0.1"
-            android:textStyle="bold"
             android:textAlignment="textStart"
             android:padding="20dp"
             android:orientation="vertical"
@@ -63,58 +63,93 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/resultadosimc"
-                android:textStyle="bold"
+                android:textStyle="italic"
                 android:letterSpacing="0.1"
                 android:layout_marginBottom="7dp"
                 android:textSize="15.5sp"
+                android:textColor="@color/black"
+
                 />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/buenpeso"
-                android:textStyle="bold"
+                android:textStyle="italic"
                 android:letterSpacing="0.1"
                 android:layout_marginBottom="7dp"
                 android:textSize="15.5sp"
+                android:textColor="@color/black"
                 />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/sobrepeso"
-                android:textStyle="bold"
+                android:textStyle="italic"
                 android:letterSpacing="0.1"
                 android:layout_marginBottom="7dp"
                 android:textSize="15.5sp"
+                android:textColor="@color/black"
                 />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/obesidad"
-                android:textStyle="bold"
+                android:textStyle="italic
+"
                 android:letterSpacing="0.1"
                 android:textSize="15.5sp"
+                android:textColor="@color/black"
                 />
 
         </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/elements"
+        android:layout_width="300dp"
+        android:layout_height="160dp"
+        app:layout_constraintTop_toBottomOf="@id/principal"
+        app:layout_constraintLeft_toLeftOf="@id/boxResult"
+        app:layout_constraintRight_toRightOf="@id/boxResult"
+
+        android:textSize="40sp"
+        android:padding="20dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
 
     <TextView
-        android:id="@+id/result"
-        android:layout_width="330dp"
-        android:layout_height="150dp"
+        android:id="@+id/title"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
         app:layout_constraintTop_toBottomOf="@id/referencia"
         app:layout_constraintLeft_toLeftOf="@id/boxResult"
         app:layout_constraintRight_toRightOf="@id/boxResult"
         app:layout_constraintBottom_toBottomOf="@id/boxResult"
-        android:background="@drawable/correct"
-        android:textSize="40sp"
+        android:text="@string/tu_imc_es_de"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="italic"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="@id/boxResult"
+        app:layout_constraintRight_toRightOf="@id/boxResult"
+        app:layout_constraintBottom_toBottomOf="@id/boxResult"
+        android:textSize="45sp"
         android:padding="20dp"
-        android:gravity="center"
-        />
+        android:textColor="@color/black"
+        android:gravity="center"/>
 
+    </LinearLayout>
 
 
 

@@ -3,6 +3,7 @@ package com.unefa7mo.healthypath.nutrition
 import android.app.AlertDialog
 import android.app.Dialog
 import android.os.Bundle
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.fragment.app.DialogFragment
 import com.unefa7mo.healthypath.R
@@ -10,6 +11,7 @@ import com.unefa7mo.healthypath.R
 
 
 class DialogResult : DialogFragment() {
+
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
 
@@ -23,6 +25,19 @@ class DialogResult : DialogFragment() {
         myResult.text = result.toString()
         return AlertDialog.Builder(requireContext()).setView(myVist).create()
 
+        fun changeColor(){
+            if (result >= 18.5 || result <= 24.9){
+                val boxResult = myVist.findViewById<LinearLayout>(R.id.elements)
+                boxResult.setBackgroundResource(R.drawable.correct)
+
+            }
+            else if(result < 18.5 || result >= 25){
+                val boxResult = myVist.findViewById<LinearLayout>(R.id.elements)
+                    boxResult.setBackgroundResource(R.drawable.incorrect)
+
+            }
+        }
+        changeColor()
 
             }
     }

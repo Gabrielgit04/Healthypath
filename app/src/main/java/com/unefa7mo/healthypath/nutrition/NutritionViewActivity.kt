@@ -3,7 +3,6 @@ package com.unefa7mo.healthypath.nutrition
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.TextView
@@ -48,14 +47,14 @@ class NutritionViewActivity : AppCompatActivity() {
             submit.setOnClickListener {
                 val peso = peso.text.toString().toInt()
                 val altura = altura.text.toString().toDouble()
-                val imc = peso / (altura * altura)
+                val imc =String.format("%.2f",peso / (altura * altura))
+
 
                 val resultados = Bundle()
-                resultados.putDouble("imcResult", imc)
-
-                intent = Intent(this, DialogResult::class.java)
-                intent.putExtras(resultados)
-                startActivity(intent)
+                resultados.putDouble("imcResult", imc.toDouble())
+                val dialog = DialogResult()
+                dialog.arguments = resultados
+                dialog.show(supportFragmentManager, "DialogResult")
 
 
             }
