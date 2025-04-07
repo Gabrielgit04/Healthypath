@@ -76,7 +76,7 @@
             android:letterSpacing="0.1"
             android:textColor="@color/black"
             android:background="@drawable/border_style"
-            android:lines="5"
+            android:lines="3"
             android:ellipsize="end"/>
         <!-- hasta aca es la box description-->
 
@@ -194,21 +194,22 @@
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/peso"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="58dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20sp"
+                android:drawablePadding="8sp"
                 android:inputType="numberDecimal"
                 android:labelFor="@id/backbutton"
                 android:hint="@string/peso"
                 android:maxLength="3"
                 android:letterSpacing="0.1"
-                android:paddingStart="12sp"
-                android:textStyle="bold"
+                android:paddingStart="10sp"
                 android:digits="0123456789"
                 android:fontFamily="sans-serif-smallcaps"
                 android:elegantTextHeight="true"
                 android:elevation="10dp"
+                android:drawableStart="@drawable/kg"
                 android:background="@drawable/edittextdesign"
 
                 tools:ignore="RtlSymmetry,SpeakableTextPresentCheck"
@@ -219,7 +220,7 @@
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/altura"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="58dp"
                 android:layout_marginStart="20sp"
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="20dp"
@@ -232,9 +233,11 @@
                 android:digits="0123456789."
                 android:elegantTextHeight="true"
                 android:elevation="10dp"
-                android:paddingStart="12dp"
+                android:paddingStart="10dp"
+                android:drawableStart="@drawable/hgn"
+                android:drawablePadding="8sp"
                 android:maxLength="4"
-                android:textStyle="bold"
+
 
                 tools:ignore="RtlSymmetry,SpeakableTextPresentCheck" />
         <!-- hasta es el edittext de altura-->
