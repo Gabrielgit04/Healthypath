@@ -3,10 +3,9 @@ package com.unefa7mo.healthypath.appViews
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.widget.ImageButton
-
 import androidx.appcompat.app.AppCompatActivity
 import com.unefa7mo.healthypath.R
+import com.unefa7mo.healthypath.activityphysique.PhysiqueActivity
 import com.unefa7mo.healthypath.nutrition.NutritionViewActivity
 
 class FirstMainActivity : AppCompatActivity() {
@@ -16,9 +15,15 @@ class FirstMainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_first_main)
         Log.d("FirstMainActivity", "onCreate")
 
-        val goNext = findViewById<ImageButton>(R.id.secondView)
+        val goNext = findViewById<com.airbnb.lottie.LottieAnimationView>(R.id.secondtouch)
         goNext.setOnClickListener {
             val intent = Intent(this, NutritionViewActivity::class.java)
+            startActivity(intent)
+        }
+
+        val gophysique = findViewById<com.airbnb.lottie.LottieAnimationView>(R.id.treetouch)
+        gophysique.setOnClickListener {
+            val intent = Intent(this, PhysiqueActivity::class.java)
             startActivity(intent)
         }
 

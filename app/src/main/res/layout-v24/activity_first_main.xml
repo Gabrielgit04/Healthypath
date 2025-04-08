@@ -47,7 +47,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/heredero"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/header_title"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -115,6 +115,51 @@
                 android:src="@mipmap/sueno"
                 android:scaleType="centerCrop" />
 
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/firsttouch"
+                android:layout_width="320dp"
+                android:layout_height="200dp"
+                app:lottie_autoPlay="true"
+                app:lottie_rawRes="@raw/touchscreen"
+                app:lottie_loop="true"
+                app:layout_constraintTop_toTopOf="@id/firstView"
+                app:layout_constraintLeft_toLeftOf="@id/firstView"
+                app:layout_constraintRight_toRightOf="@id/firstView"
+                app:layout_constraintBottom_toBottomOf="@id/firstView"/>
+<com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/secondtouch"
+                android:layout_width="320dp"
+                android:layout_height="200dp"
+                app:lottie_autoPlay="true"
+                app:lottie_rawRes="@raw/touchscreen"
+                app:lottie_loop="true"
+                app:layout_constraintTop_toTopOf="@id/secondView"
+                app:layout_constraintLeft_toLeftOf="@id/secondView"
+                app:layout_constraintRight_toRightOf="@id/secondView"
+                app:layout_constraintBottom_toBottomOf="@id/secondView"/>
+<com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/treetouch"
+                android:layout_width="320dp"
+                android:layout_height="200dp"
+                app:lottie_autoPlay="true"
+                app:lottie_rawRes="@raw/touchscreen"
+                app:lottie_loop="true"
+                app:layout_constraintTop_toTopOf="@id/thirdView"
+                app:layout_constraintLeft_toLeftOf="@id/thirdView"
+                app:layout_constraintRight_toRightOf="@id/thirdView"
+                app:layout_constraintBottom_toBottomOf="@id/thirdView"/>
+<com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/fourtouch"
+                android:layout_width="320dp"
+                android:layout_height="200dp"
+                app:lottie_autoPlay="true"
+                app:lottie_rawRes="@raw/touchscreen"
+                app:lottie_loop="true"
+                app:layout_constraintTop_toTopOf="@id/fourthView"
+                app:layout_constraintLeft_toLeftOf="@id/fourthView"
+                app:layout_constraintRight_toRightOf="@id/fourthView"
+                app:layout_constraintBottom_toBottomOf="@id/fourthView"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
