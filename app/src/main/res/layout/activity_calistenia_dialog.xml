@@ -49,22 +49,49 @@
         android:background="@drawable/datesbox"
         android:animateLayoutChanges="true">
 
-        <TextView
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-smallcaps"
-            android:textSize="25sp"
-            android:text="@string/que_es"
             app:layout_constraintTop_toTopOf="@id/boxInfo"
             app:layout_constraintLeft_toLeftOf="@id/boxInfo"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:letterSpacing="0.2"
-            android:layout_marginTop="12dp"
-            android:layout_marginStart="12dp"
-            android:background="@drawable/border_style"
-            android:padding="10dp"
-            android:elevation="15dp"/>
+            android:padding="4dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:elevation="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/definicion"
+                android:layout_width="210dp"
+                android:layout_height="60dp"
+                android:text="@string/que_es"
+                android:lines="1"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:shadowColor="#5F5F5F"
+                android:shadowRadius="1.6"
+                android:shadowDx="5"
+                android:shadowDy="-5"
+                android:textAlignment="center"
+
+                android:background="@drawable/border_style">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_style"
+
+                />
+
+
+
+
+
+        </LinearLayout>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

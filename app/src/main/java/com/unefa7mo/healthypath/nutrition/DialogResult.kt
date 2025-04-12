@@ -43,6 +43,7 @@ class DialogResult : DialogFragment() {
             }
 
         }
+
         fun closeDialog(){
             val accept = myVist.findViewById<TextView>(R.id.accept)
                 accept.setOnClickListener {
