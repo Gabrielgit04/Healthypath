@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activityphysique.dialogscontents.GymDialog"
+    android:padding="2dp">
+
+    <View
+        android:id="@+id/principal"
+        android:layout_height="70dp"
+        android:layout_width="match_parent"
+        android:background="#053F5C"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/principal"
+        android:text="Gimnasio"
+        android:textColor="@color/white"
+        android:textSize="30sp" android:fontFamily="sans-serif-smallcaps"
+        android:textAlignment="gravity"
+        android:gravity="center"
+        android:letterSpacing="0.2"
+        android:textStyle="bold"
+        android:shadowColor="#A29F9F"
+        android:shadowDy="8"
+        android:shadowDx="-8"
+        android:shadowRadius="8"
+        android:padding="10sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="720dp"
+        android:background="@drawable/datesbox"
+        android:orientation="vertical"
+        android:padding="30dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/principal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_style"
+            android:padding="12dp"
+            android:text="@string/defgym"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:lineSpacingExtra="2sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/pressbtn"
+            android:padding="6dp"
+            android:shadowColor="@color/white"
+            android:shadowDx="-4"
+            android:shadowDy="-2"
+            android:shadowRadius="6"
+            android:layout_gravity="center"
+            android:text="Ejemplo de rutina"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_height="200dp"
+            android:background="@drawable/border_style"
+            android:src="@mipmap/rutinagym"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_style"
+            android:padding="12dp"
+            android:text="Esta rutina es un ejemplo, pero se ha comprobado que de 3 a 4 ejercicios por musculo son efectivos para el crecimiento de masa muscular, con descansos de 3 a 5 minutos entre seres y sobrecarga progresiva. Ademas de calentar antes de comenzar la rutina."
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:lineSpacingExtra="2sp"
+            android:layout_marginTop="20dp"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

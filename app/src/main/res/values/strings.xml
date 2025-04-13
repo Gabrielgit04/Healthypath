@@ -41,5 +41,19 @@
                                     por lo tanto, realizar actividad física con frecuencia es indispensable para el mantenimiento de la salud.</string>
     <string name="que_es">¿Qué es?</string>
     <string name="defcalis">La calistenia es un sistema de entrenamiento físico que utiliza el propio peso corporal como resistencia para desarrollar la fuerza, la resistencia, la flexibilidad y la coordinación.\n</string>
-
+    <string name="defgym">Es un establecimiento o lugar que está equipado con diversos aparatos, máquinas y espacios dedicados a la actividad física y al ejercicio. En esta seccion nos enfocaremos principalmente en el ejercicio con pesas.</string>
+    <string name="descanso">Se recomienda descansar de entre 3 a 5 minutos entre series para el entreno correcto. Entrenar 5 dias por semana, con una buena alimentacion y horas calidas de sueño.</string>
+    <string name="valuesPropositos">
+        Mejorar la salud cardiovascular.\n
+        Aumentar la fuerza y la masa muscular.\n
+        Perder peso o grasa corporal.\n
+        Mejorar la flexibilidad y la movilidad.\n
+        Tonificar el cuerpo.\n
+        Mejorar el rendimiento deportivo.\n
+        Rehabilitación física.\n
+        Reducir el estrés y mejorar el bienestar general.\n
+        Socializar.\n
+        Mejorar la postura.\n
+        Mejorar el estado fisico en general.\n
+    </string>
 </resources>

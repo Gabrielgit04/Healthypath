@@ -7,5 +7,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="globalcolor">#033148</color>
+    <color name="correct">#A4FF9C</color>
+    <color name="incorrect">#C6505C</color>
 
 </resources>
