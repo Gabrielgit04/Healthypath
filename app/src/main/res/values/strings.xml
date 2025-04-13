@@ -39,6 +39,7 @@
     <string name="actividad_fisica">Actividad Fisica</string>
     <string name="definicion_af">La actividad física es el movimiento que desarrolla un individuo, fomentando el consumo de energía. Para cualquier ser humano,
                                     por lo tanto, realizar actividad física con frecuencia es indispensable para el mantenimiento de la salud.</string>
-    <string name="que_es">¿Qué es?\n hola\n tuta</string>
+    <string name="que_es">¿Qué es?</string>
+    <string name="defcalis">La calistenia es un sistema de entrenamiento físico que utiliza el propio peso corporal como resistencia para desarrollar la fuerza, la resistencia, la flexibilidad y la coordinación.\n</string>
 
 </resources>
