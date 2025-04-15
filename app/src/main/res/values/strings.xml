@@ -56,6 +56,15 @@
         Mejorar la postura.\n
         Mejorar el estado fisico en general.\n
     </string>
+    <string name="alimentos">
+        <b>Fibra:</b>Verduras y Hortalizas como, brocoli, espinaca, zanahoria, lechuga, tomate, entre otros.\n
+        <b>Proteina</b>:Carnes, pescados, como la pechuga de pollo, pechuga de pavo, salmon, atun, y la proteina del huevo.\n
+        <b>Carbohidratos:</b>Arroz, pasta, harina, pan, avena, entre otros.\n
+        <b>Grasas saludables:</b>Aguacate, aceite de oliva, frutos secos, entre otros.
+    </string>
+
+    <string name="ingestaProteica">Para una disciplina como el levantamiento de pesas, orientada a la ganacia de peso y aumento de masa muscular, es necesario dividir el plato en 4 partes, donde la <b>proteina</b> sea el alimento a consumir con mayor porcentaje con un 40%, los <b>carbohidratos</b> con 30%, la <b>grasa</b> con un 20% y la <b>fibra</b> con un 10%.</string>
     <string name="defaerobico">Los ejercicios aeróbicos (también conocidos como ejercicios cardiovasculares o cardio) son actividades físicas de intensidad moderada que se realizan durante un periodo prolongado de tiempo, y que requieren el uso continuo de oxígeno para producir la energía necesaria para sostener el esfuerzo.</string>
     <string name="se_recomienda_entrenar_de_3_a_5_dias_a_la_semana_dependiendo_de_la_alimentacion_que_posea_la_persona_y_el_indice_de_masa_corporal_que_tenga_por_ejemplo_una_persona_con_un_imc_por_encima_o_debajo_del_promedio_necesita_hacer_ejercicio_urgentemente">Se recomienda entrenar de 3 a 5 dias a la semana, dependiendo de la alimentacion que posea la persona, y el indice de masa corporal que tenga. Por ejemplo, una persona con un IMC por encima o debajo del promedio, necesita hacer ejercicio urgentemente.</string>
+    <string name="disminuir">Para una disciplina como el levantamiento de pesas, orientada a la disminucion de peso y perdida de grasa corporal, es necesario dividir el plato en 3 partes, donde la <b>fibra</b> sea el alimento a consumir con mayor porcentaje con un 50%, los <b>carbohidratos</b> y la <b>proteina</b> con un 25%.</string>
 </resources>

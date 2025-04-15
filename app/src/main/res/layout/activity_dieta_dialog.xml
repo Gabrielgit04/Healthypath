@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -56,16 +52,16 @@
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="700dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:elevation="20dp"
                     android:orientation="vertical"
                     android:padding="22dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
+
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toTopOf="@id/firstbox"
-                    android:background="@drawable/datesbox">
+                    >
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -80,9 +76,9 @@
                         android:elevation="15dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Dieta segun su actividad"
+                        android:text="Dieta segun su objetivo"
                         android:fontFamily="sans-serif-smallcaps"
-                        android:textSize="22dp"
+                        android:textSize="18dp"
                         android:layout_marginTop="20dp"
                         android:textStyle="bold"
                         android:textColor="@color/white"
@@ -96,15 +92,161 @@
                         android:shadowColor="@color/white"/>
 
                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aumento de masa muscular"
+                        android:layout_marginTop="20dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:shadowRadius="8"
+                        android:shadowDy="6"
+                        android:shadowDx="4"
+                        android:shadowColor="#4B4747"/>
+
+                    <TextView
                         android:layout_width="300dp"
                         android:layout_height="wrap_content"
                         android:background="@drawable/newcolorbg"
-                        android:text="Para una disciplina como el levantamiento de pesas"
-                        android:layout_marginTop="20dp"
+                        android:text="@string/ingestaProteica"
+                        android:layout_marginTop="5dp"
                         android:textColor="@color/black"
                         android:textStyle="italic"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
+                        android:padding="8dp"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Disminuir grasa"
+                        android:layout_marginTop="20dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:shadowRadius="8"
+                        android:shadowDy="6"
+                        android:shadowDx="4"
+                        android:shadowColor="#4B4747"/>
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/newcolorbg"
+                        android:text="@string/disminuir"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black"
+                        android:textStyle="italic"
+                        android:textSize="12sp"
+                        android:padding="8dp"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alimentos recomendados"
+                        android:layout_marginTop="20dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:shadowRadius="8"
+                        android:shadowDy="6"
+                        android:shadowDx="4"
+                        android:shadowColor="#4B4747"/>
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/newcolorbg"
+                        android:text="@string/alimentos"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black"
+                        android:textStyle="italic"
+                        android:textSize="12sp"
+                        android:padding="8dp"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nota: Esto sirve para cualquier disciplina, no precisamente para el gym."
+                        android:layout_marginTop="20dp"
+                        android:textSize="11sp"
+                        android:textColorHint="@color/black"
+                        android:textStyle="bold"
+                        android:textColor="#686868"
+                        android:shadowRadius="2"
+                        android:shadowColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Calcular tu requerimiento proteico"
+                        android:layout_marginTop="20dp"
+                        android:textSize="17sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:shadowRadius="8"
+                        android:shadowDy="5"
+                        android:shadowDx="4"
+                        android:shadowColor="@color/white"
+                        android:background="@drawable/pressbtn"
+                        android:layout_gravity="center"
                         android:padding="8dp"/>
+
+                    <TextView
+                        android:layout_width="300dp"
+
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/newcolorbg"
+                        android:text="Para calcular el requerimiento proteico de una persona para aumentar su masa muscular, se utiliza la formula de 2g de proteina*kg de peso."
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:textStyle="italic"
+                        android:textSize="12sp"
+                        android:padding="8dp"
+                        android:layout_gravity="center"/>
+
+                    <LinearLayout
+                        android:id="@+id/requerimientobox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:padding="15dp">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/pesoxg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Ingrese su peso"
+                            android:textColorHint="#717171"
+                            android:background="@drawable/newcolorbg"
+                            android:padding="12dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  X 2g"
+                            android:textColor="@color/black"
+                            android:textSize="10pt"
+                            android:textStyle="bold"
+                            android:layout_marginTop="12dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-smallcaps"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/calcularpxg"
+                        android:layout_width="320dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Calcular"
+                        android:padding="10dp"/>
+
 
                 </LinearLayout>
 
@@ -114,5 +256,3 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
-
-</androidx.constraintlayout.widget.ConstraintLayout>

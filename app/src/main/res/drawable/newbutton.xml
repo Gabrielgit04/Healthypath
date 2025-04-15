@@ -12,6 +12,6 @@
             android:right="5sp" />
         <corners android:radius="8sp" />
 
-        <solid android:color="@color/white" />
+        <solid android:color="#3D5265" />
 
     </shape>
