@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <View
+        android:id="@+id/principal"
+        android:layout_height="70dp"
+        android:layout_width="match_parent"
+        android:background="#053F5C"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/principal"
+        android:text="Ejercicios Aerobicos"
+        android:textColor="@color/white"
+        android:textSize="25sp" android:fontFamily="sans-serif-smallcaps"
+        android:textAlignment="gravity"
+        android:gravity="center"
+        android:letterSpacing="0.2"
+        android:textStyle="bold"
+        android:shadowColor="#A29F9F"
+        android:shadowDy="8"
+        android:shadowDx="-8"
+        android:shadowRadius="8"
+        android:padding="10sp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/firstbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/principal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/datesbox">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:elevation="20dp"
+        android:orientation="vertical"
+        android:padding="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/firstbox"
+        android:background="@drawable/datesbox">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_style"
+            android:lineSpacingExtra="3sp"
+            android:padding="16sp"
+            android:text="@string/defaerobico"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:elevation="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/pressbtn"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Ejemplo de rutina"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:shadowRadius="5"
+            android:shadowDy="-3"
+            android:shadowDx="-6"
+            android:shadowColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/tablaex"
+            android:layout_width="310dp"
+            android:layout_height="210dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_style"
+            android:contentDescription="Rutina aerobico"
+            android:elevation="15dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:src="@mipmap/aerobicoex" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/border_style"
+            android:elevation="15dp"
+            android:lineSpacingExtra="3sp"
+            android:padding="15sp"
+            android:text="@string/se_recomienda_entrenar_de_3_a_5_dias_a_la_semana_dependiendo_de_la_alimentacion_que_posea_la_persona_y_el_indice_de_masa_corporal_que_tenga_por_ejemplo_una_persona_con_un_imc_por_encima_o_debajo_del_promedio_necesita_hacer_ejercicio_urgentemente"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+
+    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

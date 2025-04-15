@@ -29,7 +29,7 @@
         android:textAlignment="gravity"
         android:gravity="center"
         android:textStyle="bold"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="15dp"
         android:padding="10sp"/>
 
     <ImageButton
@@ -178,7 +178,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="155dp"
                 android:contentDescription="@string/gym"
-                android:src="@mipmap/anaerobicoo"
+                android:src="@mipmap/dietasana"
                 android:scaleType="centerCrop"
                 android:background="#053F5C"/>
 
