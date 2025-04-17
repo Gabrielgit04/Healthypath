@@ -9,18 +9,18 @@
 
 <androidx.constraintlayout.widget.ConstraintLayout
     android:id="@+id/boxcalistenia"
-    android:padding="2dp"
     android:layout_height="wrap_content"
     android:layout_width="match_parent">
 
     <View
         android:id="@+id/principal"
-        android:layout_height="70dp"
         android:layout_width="match_parent"
+        android:layout_height="70dp"
         android:background="#053F5C"
-        app:layout_constraintTop_toTopOf="@id/boxcalistenia"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="@id/boxcalistenia"
-        app:layout_constraintRight_toRightOf="@id/boxcalistenia"/>
+        app:layout_constraintRight_toRightOf="@id/boxcalistenia"
+        app:layout_constraintTop_toTopOf="@id/boxcalistenia" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -46,7 +46,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/boxInfo"
         android:layout_width="match_parent"
-        android:layout_height="720dp"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/principal"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -66,6 +66,13 @@
             app:layout_constraintLeft_toLeftOf="@id/boxInfo"
             app:layout_constraintTop_toTopOf="@id/boxInfo">
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@mipmap/trainigcalistenia"
+                android:background="@color/white"
+                android:layout_marginBottom="10dp"/>
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -80,7 +87,7 @@
                 android:elevation="15dp" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
                 android:layout_gravity="center"
@@ -92,9 +99,11 @@
                 android:textSize="23sp"
                 android:textStyle="bold"
                 android:shadowRadius="5"
+                android:letterSpacing="0.1"
                 android:shadowDy="-3"
                 android:shadowDx="-6"
-                android:shadowColor="@color/white"/>
+                android:shadowColor="@color/white"
+                android:gravity="center"/>
 
             <ImageView
                 android:id="@+id/tablaex"
@@ -121,6 +130,156 @@
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/pressbtn"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Beneficios"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:shadowRadius="5"
+                android:shadowDy="-3"
+                android:shadowDx="-6"
+                android:shadowColor="@color/white"
+                android:gravity="center"
+                android:letterSpacing="0.1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_style"
+                android:elevation="15dp"
+                android:lineSpacingExtra="3sp"
+                android:padding="18sp"
+                android:text="@string/bencalistenia"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/pressbtn"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Tipos de ejercicios"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:shadowRadius="5"
+                android:shadowDy="-3"
+                android:shadowDx="-6"
+                android:shadowColor="@color/white"
+                android:gravity="center"
+                android:letterSpacing="0.1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Basico"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:shadowRadius="5"
+                android:shadowDy="-3"
+                android:shadowDx="-6"
+                android:shadowColor="@color/md_grey_700"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_style"
+                android:elevation="15dp"
+                android:lineSpacingExtra="3sp"
+                android:padding="18sp"
+                android:drawableStart="@drawable/flexion"
+                android:drawablePadding="5sp"
+                android:text="Ejercicios básicos: Flexiones, dominadas, fondos, sentadillas, planchas."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Intermedio"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:shadowRadius="5"
+                android:shadowDy="-3"
+                android:shadowDx="-6"
+                android:shadowColor="@color/md_grey_700"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_style"
+                android:elevation="15dp"
+                android:lineSpacingExtra="3sp"
+                android:padding="18sp"
+                android:drawableStart="@drawable/dominadas"
+                android:drawablePadding="5sp"
+                android:text="Ejercicios intermedios: Dominadas australianas, flexiones diamante, fondos en paralelas."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Avanzado"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:shadowRadius="5"
+                android:shadowDy="-3"
+                android:shadowDx="-6"
+                android:shadowColor="@color/md_grey_700"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_style"
+                android:elevation="15dp"
+                android:lineSpacingExtra="3sp"
+                android:drawableStart="@drawable/handstand"
+                android:padding="18sp"
+                android:text="Ejercicios avanzados: Muscle-up, handstand push-ups, front lever."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:drawablePadding="6sp"
+                android:textStyle="italic"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nota: El nivel avanzado no es recomendado para principiantes. Primero se debe dominar los dos anterirores tipos de ejercicios."
+                android:layout_marginTop="20dp"
+                android:textSize="11sp"
+                android:textColorHint="@color/black"
+                android:textStyle="bold"
+                android:textColor="#686868"
+                android:shadowRadius="2"
+                android:shadowColor="@color/black"/>
+
+
+
+
+
 
 
         </LinearLayout>

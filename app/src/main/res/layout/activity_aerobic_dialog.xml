@@ -61,7 +61,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="@id/firstbox"
-        android:background="@drawable/datesbox">
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@mipmap/aerobicimg"
+            android:background="@color/white"
+            android:layout_marginBottom="10dp"/>
 
 
         <TextView
@@ -77,10 +84,12 @@
             android:elevation="15dp" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:layout_gravity="center"
+            android:gravity="center"
+            android:letterSpacing="0.1"
             android:padding="5dp"
             android:background="@drawable/pressbtn"
             android:fontFamily="sans-serif-smallcaps"
@@ -118,6 +127,38 @@
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="italic" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/pressbtn"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Beneficios"
+            android:letterSpacing="0.1"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:shadowRadius="5"
+            android:shadowDy="-3"
+            android:shadowDx="-6"
+            android:shadowColor="@color/white"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/border_style"
+            android:elevation="15dp"
+            android:lineSpacingExtra="3sp"
+            android:padding="15sp"
+            android:text="@string/recomedaciones_aerobic"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:layout_gravity="center"/>
 
 
     </LinearLayout>

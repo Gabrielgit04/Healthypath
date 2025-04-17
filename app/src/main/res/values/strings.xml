@@ -62,6 +62,18 @@
         <b>Carbohidratos:</b>Arroz, pasta, harina, pan, avena, entre otros.\n
         <b>Grasas saludables:</b>Aguacate, aceite de oliva, frutos secos, entre otros.
     </string>
+    <string name="recomedaciones_aerobic">
+        * <b>Fortalecimiento del corazón:</b> El ejercicio aeróbico ayuda a que el corazón funcione de manera más eficiente.\n
+        * <b>Reducción de riesgos de salud:</b> El ejercicio aeróbico puede ayudar a reducir el riesgo de enfermedades cardíacas, diabetes, hipertensión, y colesterol alto.\n
+        * <b>Mejora del estado de ánimo:</b> El ejercicio aeróbico puede ayudar a reducir el estrés y mejorar la confianza en uno mismo.\n
+        * <b>Control del peso:</b> El ejercicio aeróbico puede ayudar a controlar el peso corporal. </string>
+
+    <string name="bencalistenia">
+        *<b>Fuerza funcional:</b>Al utilizar el peso corporal, la calistenia fortalece los músculos de forma natural y funcional, mejorando la capacidad para realizar actividades cotidianas, según <u>Medical Exercise</u>.\n
+        *<b>Flexibilidad y agilidad:</b>Los movimientos de calistenia requieren un amplio rango de movimiento, lo que aumenta la flexibilidad y la agilidad, reduciendo el riesgo de lesiones.\n
+        *<b>Resistencia muscular:</b>Con la práctica regular, la calistenia ayuda a aumentar la resistencia muscular, lo que permite realizar más repeticiones y series.\n
+        *<b>Mejora del equilibrio y la coordinación:</b>Muchos ejercicios de calistenia requieren equilibrio y coordinación, lo que contribuye a mejorar estos aspectos.\n
+        *<b>Aumento de la masa muscular:</b>La calistenia puede ayudar a aumentar la masa muscular, lo que puede mejorar la apariencia física y la fuerza. </string>
 
     <string name="ingestaProteica">Para una disciplina como el levantamiento de pesas, orientada a la ganacia de peso y aumento de masa muscular, es necesario dividir el plato en 4 partes, donde la <b>proteina</b> sea el alimento a consumir con mayor porcentaje con un 40%, los <b>carbohidratos</b> con 30%, la <b>grasa</b> con un 20% y la <b>fibra</b> con un 10%.</string>
     <string name="defaerobico">Los ejercicios aeróbicos (también conocidos como ejercicios cardiovasculares o cardio) son actividades físicas de intensidad moderada que se realizan durante un periodo prolongado de tiempo, y que requieren el uso continuo de oxígeno para producir la energía necesaria para sostener el esfuerzo.</string>
