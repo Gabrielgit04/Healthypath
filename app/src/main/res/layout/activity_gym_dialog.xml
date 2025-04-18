@@ -15,7 +15,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".activityphysique.dialogscontents.GymDialog"
-    android:padding="2dp">
+    >
 
     <View
         android:id="@+id/principal"
@@ -48,7 +48,7 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="720dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/datesbox"
         android:orientation="vertical"
         android:padding="30dp"
@@ -56,6 +56,15 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/principal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="gymimage"
+            android:src="@mipmap/gymimg"
+            android:background="#F2E6D8"
+            android:layout_marginBottom="10dp"/>
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -70,8 +79,9 @@
             />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:layout_marginTop="20dp"
             android:background="@drawable/pressbtn"
             android:padding="6dp"
@@ -82,15 +92,16 @@
             android:layout_gravity="center"
             android:text="Ejemplo de rutina"
             android:textColor="@color/white"
+            android:letterSpacing="0.1"
             android:fontFamily="sans-serif-smallcaps"
             android:textSize="22sp"
             android:textStyle="bold"/>
 
         <ImageView
-            android:layout_width="300dp"
+            android:layout_width="280dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:layout_height="200dp"
+            android:layout_height="180dp"
             android:background="@drawable/border_style"
             android:contentDescription="gym img"
             android:src="@mipmap/rutinagym"/>
@@ -100,7 +111,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/border_style"
             android:padding="12dp"
-            android:text="Esta rutina es un ejemplo, pero se ha comprobado que de 3 a 4 ejercicios por musculo son efectivos para el crecimiento de masa muscular, con descansos de 3 a 5 minutos entre seres y sobrecarga progresiva. Ademas de calentar antes de comenzar la rutina."
+            android:text="Esta rutina es un ejemplo, pero se ha comprobado que de 3 a 4 ejercicios por musculo son efectivos para el crecimiento de masa muscular, con descansos de 3 a 5 minutos entre series y sobrecarga progresiva. Ademas de calentar antes de comenzar la rutina."
             android:textColor="@color/black"
             android:textSize="14sp"
             android:textStyle="italic"
@@ -108,7 +119,141 @@
             android:layout_marginTop="20dp"
             />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/pressbtn"
+            android:padding="6dp"
+            android:shadowColor="@color/white"
+            android:shadowDx="-4"
+            android:shadowDy="-2"
+            android:shadowRadius="6"
+            android:layout_gravity="center"
+            android:text="Beneficios"
+            android:textColor="@color/white"
+            android:letterSpacing="0.1"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fisicos"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:shadowRadius="5"
+            android:layout_marginTop="10dp"
+            android:shadowDy="-3"
+            android:shadowDx="-6"
+            android:shadowColor="@color/md_grey_700"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_style"
+            android:padding="12dp"
+            android:text="@string/bengym"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:layout_gravity="center"
+            android:lineSpacingExtra="2sp"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mentales"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:shadowRadius="5"
+            android:layout_marginTop="10dp"
+            android:shadowDy="-3"
+            android:shadowDx="-6"
+            android:shadowColor="@color/md_grey_700"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_style"
+            android:padding="12dp"
+            android:text="@string/mentalesgym"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:textStyle="italic"
+            android:lineSpacingExtra="2sp"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/pressbtn"
+            android:padding="6dp"
+            android:shadowColor="@color/white"
+            android:shadowDx="-4"
+            android:shadowDy="-2"
+            android:shadowRadius="6"
+            android:layout_gravity="center"
+            android:text="¿Que es la sobrecarga progresiva?"
+            android:textColor="@color/white"
+            android:letterSpacing="0.1"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_style"
+            android:padding="12dp"
+            android:text="La sobrecarga progresiva es el proceso de incrementar gradualmente el estrés que se ejerce sobre el cuerpo durante el entrenamiento. En otras palabras, es el principio de hacer que tus músculos trabajen más duro con el tiempo para que se adapten y se fortalezcan."
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:textStyle="italic"
+            android:lineSpacingExtra="2sp"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Como aplicarla?"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:shadowRadius="5"
+            android:layout_marginTop="10dp"
+            android:shadowDy="-3"
+            android:shadowDx="-6"
+            android:shadowColor="@color/md_grey_700"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_style"
+            android:padding="12dp"
+            android:text="@string/sobrecarga"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:textStyle="italic"
+            android:lineSpacingExtra="2sp"
+            android:layout_marginTop="20dp"
+            />
 
 
     </LinearLayout>

@@ -57,7 +57,7 @@
                     android:layout_marginTop="20dp"
                     android:elevation="20dp"
                     android:orientation="vertical"
-                    android:padding="22dp"
+                    android:padding="8dp"
 
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
@@ -100,6 +100,7 @@
                         android:textSize="16sp"
                         android:textColor="@color/black"
                         android:textStyle="bold"
+                        android:layout_marginStart="10sp"
                         android:shadowRadius="8"
                         android:shadowDy="6"
                         android:shadowDx="4"
@@ -126,6 +127,7 @@
                         android:textStyle="bold"
                         android:shadowRadius="8"
                         android:shadowDy="6"
+                        android:layout_marginStart="10sp"
                         android:shadowDx="4"
                         android:shadowColor="#4B4747"/>
 
@@ -149,6 +151,7 @@
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         android:shadowRadius="8"
+                        android:layout_marginStart="10sp"
                         android:shadowDy="6"
                         android:shadowDx="4"
                         android:shadowColor="#4B4747"/>
@@ -170,6 +173,7 @@
                         android:layout_height="wrap_content"
                         android:text="Nota: Esto sirve para cualquier disciplina, no precisamente para el gym."
                         android:layout_marginTop="20dp"
+                        android:layout_marginStart="10sp"
                         android:textSize="11sp"
                         android:textColorHint="@color/black"
                         android:textStyle="bold"

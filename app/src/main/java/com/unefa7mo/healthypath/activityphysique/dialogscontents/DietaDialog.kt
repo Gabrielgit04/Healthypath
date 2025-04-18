@@ -10,6 +10,7 @@ import android.widget.EditText
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
 import com.unefa7mo.healthypath.R
+import com.unefa7mo.healthypath.activityphysique.dialogscontents.dialoresultpxg.DialogResultPxG
 
 
 class DietaDialog: DialogFragment() {
@@ -20,7 +21,7 @@ class DietaDialog: DialogFragment() {
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
 
         super.onCreate(savedInstanceState)
-        myView = requireActivity().layoutInflater.inflate(R.layout.activity_dieta_dialog, null)
+        myView = requireActivity().layoutInflater.inflate(R.layout.activity_resultpxg_dialog, null)
         calcularkgxp()
         return AlertDialog.Builder(requireContext()).setView(myView).setCancelable(false)
             .setPositiveButton("Salir", DialogInterface.OnClickListener { dialog, which ->
@@ -34,7 +35,15 @@ class DietaDialog: DialogFragment() {
 
         calcularpxg.setOnClickListener {
             val resultado = pesoxg.text.toString().toInt() * 2
-            Log.d("Resultado", resultado.toString())
+
+            val sendtext = Bundle()
+            sendtext.putInt("requerimiento", resultado)
+            val dialog = DialogResultPxG()
+            dialog.arguments = sendtext
+            dialog.show(parentFragmentManager, "DialogResultPxG")
+
+
+
     }
 
     }
