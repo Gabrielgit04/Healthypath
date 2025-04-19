@@ -255,7 +255,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 android:text="@string/calcular"
-                android:background="@drawable/newbutton"
+                android:background="@drawable/correct"
                 android:textColor="#021F64"
                 android:width="320dp"
                 android:layout_marginTop="40sp"

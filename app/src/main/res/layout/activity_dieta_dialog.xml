@@ -79,7 +79,7 @@
                         android:layout_height="wrap_content"
                         android:text="Dieta segun su objetivo"
                         android:fontFamily="sans-serif-smallcaps"
-                        android:textSize="18dp"
+                        android:textSize="18sp"
                         android:layout_marginTop="20dp"
                         android:textStyle="bold"
                         android:textColor="@color/white"
@@ -223,7 +223,7 @@
                             android:id="@+id/pesoxg"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:hint="Ingrese su peso"
+                            android:hint="@string/ingrese_su_peso"
                             android:textColorHint="#717171"
                             android:background="@drawable/newcolorbg"
                             android:padding="12dp"
@@ -233,7 +233,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="  X 2g"
+                            android:text="X 2g"
                             android:textColor="@color/black"
                             android:textSize="10pt"
                             android:textStyle="bold"
@@ -249,7 +249,7 @@
                         android:gravity="center"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
-                        android:text="Calcular"
+                        android:text="@string/calcularL"
                         android:padding="10dp"/>
 
 

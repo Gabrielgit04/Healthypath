@@ -99,4 +99,6 @@
     <string name="defaerobico">Los <b>ejercicios aeróbicos</b> (también conocidos como ejercicios cardiovasculares o cardio) son actividades físicas de intensidad moderada que se realizan durante un periodo prolongado de tiempo, y que requieren el uso continuo de oxígeno para producir la energía necesaria para sostener el esfuerzo.</string>
     <string name="se_recomienda_entrenar_de_3_a_5_dias_a_la_semana_dependiendo_de_la_alimentacion_que_posea_la_persona_y_el_indice_de_masa_corporal_que_tenga_por_ejemplo_una_persona_con_un_imc_por_encima_o_debajo_del_promedio_necesita_hacer_ejercicio_urgentemente">Se recomienda entrenar de 3 a 5 dias a la semana, dependiendo de la alimentacion que posea la persona, y el indice de masa corporal que tenga. Por ejemplo, una persona con un IMC por encima o debajo del promedio, necesita hacer ejercicio urgentemente.</string>
     <string name="disminuir">Para una disciplina como el levantamiento de pesas, orientada a la disminucion de peso y perdida de grasa corporal, es necesario dividir el plato en 3 partes, donde la <b>fibra</b> sea el alimento a consumir con mayor porcentaje con un 50%, los <b>carbohidratos</b> y la <b>proteina</b> con un 25%.</string>
+    <string name="calcularL">Calcular</string>
+    <string name="ingrese_su_peso">Ingrese su peso</string>
 </resources>
