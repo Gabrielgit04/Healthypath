@@ -21,7 +21,7 @@ class DialogResultPxG : DialogFragment() {
         myVist = requireActivity().layoutInflater.inflate(R.layout.activity_resultpxg_dialog, null)
 
         val resultVist = myVist.findViewById<TextView>(R.id.resultpxg)
-        resultVist.text = requerimiento.toString()
+        resultVist.text = requerimiento.toString()+"gr"
 
 
         return AlertDialog.Builder(requireContext()).setView(myVist).setCancelable(false).setPositiveButton("Salir", DialogInterface.OnClickListener{ dialog, which ->

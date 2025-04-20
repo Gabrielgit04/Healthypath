@@ -55,8 +55,7 @@
             android:letterSpacing="0.1"
             android:textAlignment="textStart"
             android:padding="20dp"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"

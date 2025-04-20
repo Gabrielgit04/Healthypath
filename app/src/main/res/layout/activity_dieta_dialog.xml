@@ -202,7 +202,7 @@
 
                         android:layout_height="wrap_content"
                         android:background="@drawable/newcolorbg"
-                        android:text="Para calcular el requerimiento proteico de una persona para aumentar su masa muscular, se utiliza la formula de 2g de proteina*kg de peso."
+                        android:text="Para calcular el requerimiento proteico de una persona para aumentar su masa muscular, se utiliza la formula de 2gr de proteina*kg de peso."
                         android:layout_marginTop="10dp"
                         android:textColor="@color/black"
                         android:textStyle="italic"
@@ -212,34 +212,27 @@
 
                     <LinearLayout
                         android:id="@+id/requerimientobox"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:layout_gravity="center"
                         android:layout_marginTop="10dp"
+                        android:gravity="center"
                         android:padding="15dp">
 
                         <androidx.appcompat.widget.AppCompatEditText
                             android:id="@+id/pesoxg"
-                            android:layout_width="wrap_content"
+                            android:layout_width="300dp"
                             android:layout_height="wrap_content"
                             android:hint="@string/ingrese_su_peso"
                             android:textColorHint="#717171"
                             android:background="@drawable/newcolorbg"
                             android:padding="12dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_gravity="center"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="X 2g"
-                            android:textColor="@color/black"
-                            android:textSize="10pt"
-                            android:textStyle="bold"
-                            android:layout_marginTop="12dp"
+                            android:gravity="center"
+                            android:layout_marginTop="0dp"
                             android:layout_gravity="center"
-                            android:fontFamily="sans-serif-smallcaps"/>
+                            />
+
                     </LinearLayout>
 
                     <Button

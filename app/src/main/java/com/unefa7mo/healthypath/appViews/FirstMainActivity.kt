@@ -6,6 +6,7 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.unefa7mo.healthypath.R
 import com.unefa7mo.healthypath.activityphysique.PhysiqueActivity
+import com.unefa7mo.healthypath.dream.DreamActivity
 import com.unefa7mo.healthypath.nutrition.NutritionViewActivity
 
 class FirstMainActivity : AppCompatActivity() {
@@ -24,6 +25,12 @@ class FirstMainActivity : AppCompatActivity() {
         val gophysique = findViewById<com.airbnb.lottie.LottieAnimationView>(R.id.treetouch)
         gophysique.setOnClickListener {
             val intent = Intent(this, PhysiqueActivity::class.java)
+            startActivity(intent)
+        }
+
+        val godream = findViewById<com.airbnb.lottie.LottieAnimationView>(R.id.fourtouch)
+        godream.setOnClickListener {
+            val intent = Intent(this, DreamActivity::class.java)
             startActivity(intent)
         }
 

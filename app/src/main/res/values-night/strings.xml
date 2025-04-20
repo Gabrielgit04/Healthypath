@@ -14,25 +14,91 @@
     <string name="ingresa_tus_datos">Ingresa tus datos:</string>
     <string name="hombre">male</string>
     <string name="mujer">female</string>
-    <string name="altura">Altura</string>
+    <string name="altura">Altura…</string>
     <string name="calcular">Calcular</string>
-    <string name="peso">Peso</string>
+    <string name="peso">Peso…</string>
     <string name="descriptiontxt">Para medir el estado nutritivo en el que se encuentra una persona utilizamos el IMC. El Índice de Masa Corporal (IMC) es una medida que se utiliza para evaluar si una persona tiene un peso saludable en relación con su estatura.
-        En otras palabras, es una herramienta que relaciona el peso y la altura de una persona para estimar si está en un rango de peso adecuado.Aunque tampoco es unidad de medicion 100% precisa, es viable utilizarla.
+        Aunque tampoco es unidad de medicion 100% precisa, es viable utilizarla.
     </string>
     <string name="resultados_del_calculo">Resultados del calculo</string>
     <string name="resultadosimc">• IMC menor a 18.5: Se considera bajo peso.</string>
-    <string name="buenpeso"> • IMC entre 18.5 y 24.9: Se considera peso saludable o normal.</string>
+    <string name="buenpeso">• IMC entre 18.5 y 24.9: Se considera peso saludable o normal.</string>
     <string name="sobrepeso">• IMC entre 25 y 29.9: Se considera sobrepeso.</string>
     <string name="obesidad">• IMC de 30 o más: Se considera obesidad.</string>
+    <string name="title_activity_main">MainActivity</string>
     <string name="tu_imc_es_de">Tu IMC es de:</string>
     <string name="a_c_e_p_t_a_r">A c e p t a r</string>
     <string name="calistenia">calistenia</string>
     <string name="levantamiento_de_pesas">Levantamiento de pesas</string>
     <string name="gym">calistenia</string>
     <string name="calistenico">Calistenia</string>
+    <string name="cardcalis">calistenia</string>
+    <string name="aerobico">Aerobico</string>
     <string name="anaerobico">Anaerobico</string>
     <string name="pesas">GYM</string>
     <string name="actividad_fisica">Actividad Fisica</string>
-
+    <string name="definicion_af">La actividad física es el movimiento que desarrolla un individuo, fomentando el consumo de energía. Para cualquier ser humano,
+                                    por lo tanto, realizar actividad física con frecuencia es indispensable para el mantenimiento de la salud.</string>
+    <string name="que_es">¿Qué es?</string>
+    <string name="defcalis">La <b>calistenia</b> es un sistema de entrenamiento físico que utiliza el propio peso corporal como resistencia para desarrollar la fuerza, la resistencia, la flexibilidad y la coordinación.\n</string>
+    <string name="defgym">El <b>gimnasio</b> es un establecimiento o lugar que está equipado con diversos aparatos, máquinas y espacios dedicados a la actividad física y al ejercicio. En esta seccion nos enfocaremos principalmente en el ejercicio con pesas.</string>
+    <string name="descanso">Se recomienda descansar de entre 3 a 5 minutos entre series para el entreno correcto. Entrenar 5 dias por semana, con una buena alimentacion y horas calidas de sueño.</string>
+    <string name="valuesPropositos">
+        Mejorar la salud cardiovascular.\n
+        Aumentar la fuerza y la masa muscular.\n
+        Perder peso o grasa corporal.\n
+        Mejorar la flexibilidad y la movilidad.\n
+        Tonificar el cuerpo.\n
+        Mejorar el rendimiento deportivo.\n
+        Rehabilitación física.\n
+        Reducir el estrés y mejorar el bienestar general.\n
+        Socializar.\n
+        Mejorar la postura.\n
+        Mejorar el estado fisico en general.\n
+    </string>
+    <string name="alimentos">
+        <b>Fibra:</b>Verduras y Hortalizas como, brocoli, espinaca, zanahoria, lechuga, tomate, entre otros.\n
+        <b>Proteina</b>:Carnes, pescados, como la pechuga de pollo, pechuga de pavo, salmon, atun, y la proteina del huevo.\n
+        <b>Carbohidratos:</b>Arroz, pasta, harina, pan, avena, entre otros.\n
+        <b>Grasas saludables:</b>Aguacate, aceite de oliva, frutos secos, entre otros.
+    </string>
+    <string name="recomedaciones_aerobic">
+        * <b>Fortalecimiento del corazón:</b> El ejercicio aeróbico ayuda a que el corazón funcione de manera más eficiente.\n\n
+        * <b>Reducción de riesgos de salud:</b> El ejercicio aeróbico puede ayudar a reducir el riesgo de enfermedades cardíacas, diabetes, hipertensión, y colesterol alto.\n\n
+        * <b>Mejora del estado de ánimo:</b> El ejercicio aeróbico puede ayudar a reducir el estrés y mejorar la confianza en uno mismo.\n\n
+        * <b>Control del peso:</b> El ejercicio aeróbico puede ayudar a controlar el peso corporal. </string>
+    <string name="bengym">
+        * Fortalece los huesos y músculos.\n\n
+        * Mejora la circulación.\n\n
+        * Reduce el riesgo de enfermedades del corazón.\n\n
+        * Ayuda a controlar el peso.\n\n
+        * Reduce el riesgo de diabetes y presión arterial alta.\n\n
+        * Ayuda a controlar los niveles de glucosa en la sangre.\\n
+        * Ayuda a reducir la inflamación en el cuerpo.\n\n
+        * Ayuda a fortalecer el sistema inmunitario.</string>
+    <string name="bencalistenia">
+        *<b>Fuerza funcional:</b>Al utilizar el peso corporal, la calistenia fortalece los músculos de forma natural y funcional, mejorando la capacidad para realizar actividades cotidianas, según <u>Medical Exercise</u>.\n\n
+        *<b>Flexibilidad y agilidad:</b>Los movimientos de calistenia requieren un amplio rango de movimiento, lo que aumenta la flexibilidad y la agilidad, reduciendo el riesgo de lesiones.\n\n
+        *<b>Resistencia muscular:</b>Con la práctica regular, la calistenia ayuda a aumentar la resistencia muscular, lo que permite realizar más repeticiones y series.\n\n
+        *<b>Mejora del equilibrio y la coordinación:</b>Muchos ejercicios de calistenia requieren equilibrio y coordinación, lo que contribuye a mejorar estos aspectos.\n\n
+        *<b>Aumento de la masa muscular:</b>La calistenia puede ayudar a aumentar la masa muscular, lo que puede mejorar la apariencia física y la fuerza. </string>
+    <string name="sobrecarga">
+        <b>1.Aumento del Peso (Resistencia):</b>Es la forma más directa. Si puedes levantar 10 kg en press de banca 10 veces, la próxima vez intenta levantar 12 kg las mismas 10 veces.\n\n
+        <b>2.Aumento de las Repeticiones:</b>Si puedes hacer 8 repeticiones con un peso determinado, la próxima vez intenta hacer 9 o 10 repeticiones con el mismo peso.\n\n
+        <b>3.Aumento de las Series:</b>Si haces 3 series de un ejercicio, la próxima vez intenta hacer 4 series con el mismo peso y repeticiones.\n\n
+        <b>4.Aumento de la Frecuencia de Entrenamiento:</b>Si entrenas un músculo una vez por semana, intenta entrenarlo dos veces por semana.\n\n
+    </string>
+    <string name="mentalesgym">
+        * Mejora el estado de ánimo.\n\n
+        * Ayuda a lidiar con el estrés.\n\n
+        * Controla la ansiedad.\n\n
+        * Reduce el riesgo de depresión.\n\n
+        * Mejora la memoria.\n\n
+        * Aumenta la calidad del sueño.</string>
+    <string name="ingestaProteica">Para una disciplina como el levantamiento de pesas, orientada a la ganacia de peso y aumento de masa muscular, es necesario dividir el plato en 4 partes, donde la <b>proteina</b> sea el alimento a consumir con mayor porcentaje con un 40%, los <b>carbohidratos</b> con 30%, la <b>grasa</b> con un 20% y la <b>fibra</b> con un 10%.</string>
+    <string name="defaerobico">Los <b>ejercicios aeróbicos</b> (también conocidos como ejercicios cardiovasculares o cardio) son actividades físicas de intensidad moderada que se realizan durante un periodo prolongado de tiempo, y que requieren el uso continuo de oxígeno para producir la energía necesaria para sostener el esfuerzo.</string>
+    <string name="se_recomienda_entrenar_de_3_a_5_dias_a_la_semana_dependiendo_de_la_alimentacion_que_posea_la_persona_y_el_indice_de_masa_corporal_que_tenga_por_ejemplo_una_persona_con_un_imc_por_encima_o_debajo_del_promedio_necesita_hacer_ejercicio_urgentemente">Se recomienda entrenar de 3 a 5 dias a la semana, dependiendo de la alimentacion que posea la persona, y el indice de masa corporal que tenga. Por ejemplo, una persona con un IMC por encima o debajo del promedio, necesita hacer ejercicio urgentemente.</string>
+    <string name="disminuir">Para una disciplina como el levantamiento de pesas, orientada a la disminucion de peso y perdida de grasa corporal, es necesario dividir el plato en 3 partes, donde la <b>fibra</b> sea el alimento a consumir con mayor porcentaje con un 50%, los <b>carbohidratos</b> y la <b>proteina</b> con un 25%.</string>
+    <string name="calcularL">Calcular</string>
+    <string name="ingrese_su_peso">Ingrese su peso</string>
 </resources>
