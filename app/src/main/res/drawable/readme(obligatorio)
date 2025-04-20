@@ -1,0 +1,16 @@
+border_style es para los cuadros de texto
+
+box_result es la caja donde se muestra el resultado de los calculos
+
+correct estilo del boton calcular
+
+datesbox es el estilo de la caja de imc y tambien de los dialogos, es decir el background
+
+edittextdesign es el estilo de los edittext de la vista(layout) nutricion
+
+headerglobal es la el fondo del header principal de todas las vistas
+
+newcolorbg es el background de las cajas de texto de los dialogs(modales)
+
+pressbtn es el background de los subtitulos
+
