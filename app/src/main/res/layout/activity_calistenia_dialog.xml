@@ -55,6 +55,16 @@
         android:animateLayoutChanges="true">
 
 
+            <ImageView
+                android:id="@+id/imgcalistenia"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@mipmap/trainigcalistenia"
+                android:background="@color/white"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintTop_toTopOf="@id/boxInfo"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -62,16 +72,10 @@
             android:elevation="20dp"
             android:orientation="vertical"
             android:padding="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgcalistenia"
             app:layout_constraintLeft_toLeftOf="@id/boxInfo"
-            app:layout_constraintTop_toTopOf="@id/boxInfo">
+            >
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:src="@mipmap/trainigcalistenia"
-                android:background="@color/white"
-                android:layout_marginBottom="10dp"/>
 
 
             <TextView
