@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chatbot.ChatbotActivity"
+    android:background="#E1EDEB">
+
+    <View
+        android:id="@+id/header_principal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/chatheader"/>
+
+    <ImageButton
+        android:id="@+id/imgback"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/atras"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="@id/header_principal"
+        app:layout_constraintLeft_toLeftOf="@id/header_principal"
+        app:layout_constraintBottom_toBottomOf="@id/header_principal"
+        android:layout_marginStart="6dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HealthyBot"
+        app:layout_constraintTop_toTopOf="@id/header_principal"
+        android:fontFamily="sans-serif-smallcaps"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/header_principal"
+        android:layout_marginEnd="20dp"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#053F5C"
+        android:letterSpacing="0.1"
+        android:shadowDx="-5"
+        android:shadowDy="5"
+        android:shadowRadius="2"
+        android:shadowColor="#05374F"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/boxredact"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="#053F5C"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="30dp">
+
+
+            <EditText
+                android:layout_width="250dp"
+                android:inputType="text"
+                app:layout_constraintBottom_toBottomOf="@id/boxredact"
+                app:layout_constraintTop_toTopOf="@id/boxredact"
+                app:layout_constraintLeft_toLeftOf="@id/boxredact"
+                app:layout_constraintRight_toLeftOf="@id/imgbtnsend"
+                android:layout_height="60dp"
+                android:background="@drawable/edittextdesign"
+                android:hint="¿Que estas pensando?"
+                android:layout_marginEnd="30dp"
+                android:textColorHint="#8BC9C9C9"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+            <ImageButton
+                android:id="@+id/imgbtnsend"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="btnsendquery"
+                app:layout_constraintBottom_toBottomOf="@id/boxredact"
+                app:layout_constraintTop_toTopOf="@id/boxredact"
+                app:layout_constraintRight_toRightOf="@id/boxredact"
+                android:src="@drawable/baseline_arrow_circle_right_24"
+                android:layout_marginEnd="15dp"
+                android:background="#053F5C"
+                android:layout_gravity="end"
+                />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
