@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center">
+    
+    <TextView
+        android:text="Inicio de sesion"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/DarkBlue"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="100dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@mipmap/imagen"
+            android:layout_margin="20dp"/>
+
+        <EditText
+            android:id="@+id/UnombreUsuario"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de Usuario"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="25dp"
+            android:padding="8dp"
+            android:textSize="20dp"
+            android:background="@drawable/borde_redondeado"/>
+
+        <EditText
+            android:id="@+id/Upassword"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contrasena"
+            android:layout_marginTop="15dp"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            android:background="@drawable/borde_redondeado"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/empezar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/DarkBlue"
+            android:background="@drawable/borde_redondeado"
+            android:layout_marginTop="25dp"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/registrarme"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/DarkBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borde_redondeado"
+            android:layout_marginTop="18dp"
+            android:text="Registrarme"
+            android:gravity="center"
+            android:textSize="20dp"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar_SignIn"
+            style="?android:attr/progressBarStyle"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/forgottenPassword"
+            android:layout_width="250dp"
+            android:layout_height="55dp"
+            android:hint="Olvidaste tu contrasena?"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColorHint="@color/orange"
+            android:paddingStart="30dp"
+            android:layout_marginTop="15dp"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -144,4 +144,5 @@
     <string name="sueo">Sueño</string>
     <string name="dream_introudction">El sueño es una parte importante para el desarrollo humano, esta seccion estara dedicada a la importancia que tiene dormir bien, y las consecuencias de no hacerlo, ademas de que como una de las consecuencias mas frecuentes tenemos el insomnio, estaremos detallando lo que es y como este afecta la vida de las personas.</string>
     <string name="atras">atras</string>
+    <string name="title_activity_password_recover">PasswordRecoverActivity</string>
 </resources>

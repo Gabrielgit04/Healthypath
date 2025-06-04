@@ -1,11 +1,22 @@
 [versions]
-agp = "8.9.0"
+activityComposeVersion = "1.8.2"
+agp = "8.9.2"
+artifactid = "version"
+dagger = "2.28.3"
+daggerCompiler = "2.20"
+daggerCompilerVersion = "2.11"
+firebaseAuth = "23.2.1"
+firebaseBom = "33.14.0"
+generativeai = "0.9.0"
 kotlin = "2.0.21"
 coreKtx = "1.15.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
 appcompat = "1.7.0"
+kotlinStdlibJdk7 = "1.8.22"
+kotlinxCoroutinesCore = "1.2.1"
+lifecycleViewmodelCompose = "2.7.0"
 lottie = "6.6.4"
 material = "1.12.0"
 activity = "1.10.1"
@@ -16,11 +27,25 @@ activityCompose = "1.10.1"
 composeBom = "2024.09.00"
 
 [libraries]
+androidx-activity-compose-v182 = { module = "androidx.activity:activity-compose", version.ref = "activityComposeVersion" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleViewmodelCompose" }
+artifactid = { module = "groupId:artifactId", version.ref = "artifactid" }
+dagger = { module = "com.google.dagger:dagger", version.ref = "daggerCompiler" }
+dagger-android-processor = { module = "com.google.dagger:dagger-android-processor", version.ref = "daggerCompiler" }
+dagger-compiler = { module = "com.google.dagger:dagger-compiler", version.ref = "daggerCompiler" }
+dagger-compiler-v211 = { module = "com.google.dagger:dagger-compiler", version.ref = "daggerCompilerVersion" }
+dagger-v2283 = { module = "com.google.dagger:dagger", version.ref = "dagger" }
+firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
+firebase-auth = { module = "com.google.firebase:firebase-auth", version.ref = "firebaseAuth" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+generativeai = { module = "com.google.ai.client.generativeai:generativeai", version.ref = "generativeai" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+kotlin-stdlib-jdk7 = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk7", version.ref = "kotlinStdlibJdk7" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
 lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
@@ -36,6 +61,10 @@ androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-toolin
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+material3 = { module = "androidx.compose.material3:material3" }
+ui = { module = "androidx.compose.ui:ui" }
+ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
+ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

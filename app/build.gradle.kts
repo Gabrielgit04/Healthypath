@@ -4,19 +4,24 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("org.jetbrains.kotlin.kapt") //
+    id("com.google.gms.google-services")
+    id("kotlin-kapt")
 }
 
 android {
+    kapt {
+        generateStubs = true
+    }
     namespace = "com.unefa7mo.healthypath"
     compileSdk = 35
 
     defaultConfig {
         applicationId = "com.unefa7mo.healthypath"
-        minSdk = 21
+        minSdk = 23
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -30,11 +35,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "17"
     }
     buildFeatures {
         compose = true
@@ -42,7 +47,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -63,5 +67,21 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    implementation (libs.lottie)
+    implementation(libs.lottie)
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlin.stdlib.jdk7)
+    implementation(libs.generativeai)
+    implementation(libs.ui)
+    debugImplementation(libs.ui.tooling)
+    implementation(libs.androidx.activity.compose.v182)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+
+    implementation(libs.dagger.v2283)
+    kapt(libs.dagger.compiler)
+
+
+    // Dependencias de Firebase (No tocar)
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.analytics)
+    implementation(libs.firebase.auth)
 }

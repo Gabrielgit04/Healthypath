@@ -9,5 +9,13 @@
     <color name="globalcolor">#033148</color>
     <color name="correct">#A4FF9C</color>
     <color name="incorrect">#C6505C</color>
+    <color name="Grey">#CCCACA</color>
+    <color name="halfgrey">#E2DEDE</color>
+    <color name="SoftBlue">#9FE7F5</color>
+    <color name="SeaBlue">#429EBD</color>
+    <color name="DarkBlue">#053F5C</color>
+    <color name="SoftOrange">#F7AD19</color>
+    <color name="orange">#DE870C</color>
+
 
 </resources>

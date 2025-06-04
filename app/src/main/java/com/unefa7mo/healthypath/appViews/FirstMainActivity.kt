@@ -14,7 +14,7 @@ import com.unefa7mo.healthypath.chatbot.ChatbotActivity
 import com.unefa7mo.healthypath.dream.DreamActivity
 import com.unefa7mo.healthypath.nutrition.NutritionViewActivity
 
-class FirstMainActivity : AppCompatActivity() {
+class FirstMainActivity :AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 

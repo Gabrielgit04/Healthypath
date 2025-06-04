@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "853847561402",
+    "project_id": "healtypath-8cfff",
+    "storage_bucket": "healtypath-8cfff.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853847561402:android:7f05c4639b81f541d41e83",
+        "android_client_info": {
+          "package_name": "com.unefa7mo.healthypath"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkeH8kHhGyViS1ElKov7iPM3OzwwA69VY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

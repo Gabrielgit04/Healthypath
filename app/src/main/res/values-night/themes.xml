@@ -3,6 +3,7 @@
 
 
     <style name="themeApp.Healthypath" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
         <!--Primary brand color-->
         <item name="colorPrimary">#053F5C</item>
         <item name="colorPrimaryVariant">#053F5C</item>
@@ -22,4 +23,5 @@
     <style name="TextAppearance.Healthypath.SmallCaps" parent="TextAppearance.MaterialComponents.Body1">
         <item name="fontFamily">sans-serif-smallcaps</item>
     </style>
+
 </resources>
