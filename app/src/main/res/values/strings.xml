@@ -152,6 +152,12 @@
     <string name="cambiar_contrasena">Cambiar contraseña</string>
     <string name="cerrar_sesion">Cerrar sesión</string>
     <string name="title_activity_password_recover">PasswordRecoverActivity</string>
+    <string name="healthy_bot">HealthyBot</string>
+    <string name="healthy_bot_subtitle">Asistente de bienestar</string>
+    <string name="chatbot_placeholder">¿Qué estás pensando?</string>
+    <string name="chatbot_empty_message">Pregúntame lo que desees sobre nutrición, actividad física o sueño.</string>
+    <string name="btn_send">Enviar</string>
+    <string name="escribiendo">Escribiendo…</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>

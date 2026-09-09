@@ -21,7 +21,8 @@
             tools:ignore="Instantiatable" />
         <activity
             android:name=".chatbot.ChatbotActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".dream.DreamActivity"
             android:exported="false" />

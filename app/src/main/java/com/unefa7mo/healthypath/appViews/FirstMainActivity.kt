@@ -3,7 +3,6 @@ package com.unefa7mo.healthypath.appViews
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageButton
-import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.unefa7mo.healthypath.R
@@ -29,10 +28,6 @@ class FirstMainActivity : AppCompatActivity() {
         navegarPasajero(R.id.treetouch, PhysiqueActivity::class.java)
         navegarPasajero(R.id.fourthView, DreamActivity::class.java)
         navegarPasajero(R.id.fourtouch, DreamActivity::class.java)
-
-        findViewById<LinearLayout>(R.id.boxchat).setOnClickListener {
-            startActivity(Intent(this, ChatbotActivity::class.java))
-        }
     }
 
     override fun onResume() {
