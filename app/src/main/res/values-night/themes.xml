@@ -21,7 +21,12 @@
     </style>
 
     <style name="TextAppearance.Healthypath.SmallCaps" parent="TextAppearance.MaterialComponents.Body1">
-        <item name="fontFamily">sans-serif-smallcaps</item>
+        <item name="fontFamily">@font/poppins_bold</item>
+    </style>
+  <!-- Base application theme. -->
+    <style name="Base.themeApp.Healthypath" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
     </style>
 
 </resources>

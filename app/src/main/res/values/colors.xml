@@ -12,10 +12,22 @@
     <color name="Grey">#CCCACA</color>
     <color name="halfgrey">#E2DEDE</color>
     <color name="SoftBlue">#9FE7F5</color>
-    <color name="SeaBlue">#429EBD</color>
+    <color name="SeaBlue">#EEB6C0C8</color>
     <color name="DarkBlue">#053F5C</color>
     <color name="SoftOrange">#F7AD19</color>
     <color name="orange">#DE870C</color>
+
+    <color name="background_light">#F4F7FA</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="text_primary">#172B4D</color>
+    <color name="text_secondary">#5C6B7A</color>
+    <color name="input_fill">#EDF2F7</color>
+    <color name="input_stroke">#D3DEE8</color>
+    <color name="card_stroke">#E4EAF1</color>
+    <color name="teal_soft">#E0F4F8</color>
+    <color name="orange_soft">#FFF3DE</color>
+    <color name="success">#27AE60</color>
+    <color name="danger">#C6505C</color>
 
 
 </resources>

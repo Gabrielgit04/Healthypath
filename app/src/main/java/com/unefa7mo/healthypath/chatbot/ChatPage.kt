@@ -62,7 +62,7 @@ fun MessageList(modifier: Modifier = Modifier, messageList: List<MessageModel>) 
             ) {
                 Icon(
                     modifier= Modifier.size(60.dp),
-                    painter = painterResource(id = R.drawable.bot_icom),
+                    painter = painterResource(id = R.drawable.tabler_message_circle),
                     contentDescription = "Bot Icon",
                     tint = Color.Blue
                 )

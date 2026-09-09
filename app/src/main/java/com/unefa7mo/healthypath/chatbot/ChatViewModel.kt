@@ -3,6 +3,8 @@ package com.unefa7mo.healthypath.chatbot
 import androidx.lifecycle.ViewModel
 import com.google.ai.client.generativeai.GenerativeModel
 import androidx.lifecycle.viewModelScope
+import com.unefa7mo.healthypath.BuildConfig
+
 import com.google.ai.client.generativeai.type.content
 import kotlinx.coroutines.launch
 
@@ -13,11 +15,7 @@ class ChatViewModel: ViewModel() {
         mutableListOf<MessageModel>()
     }
 
-    val generativeModel: GenerativeModel= GenerativeModel(
-
-                modelName = "gemini-pro",
-      apiKey = Constants().apiKey
-    )
+    val generativeModel: GenerativeModel= GenerativeModel(modelName = "gemini-pro", apiKey = BuildConfig.API_KEY)
 
     fun sendMessage(question: String){
         viewModelScope.launch {

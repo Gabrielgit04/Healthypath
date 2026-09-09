@@ -1,297 +1,262 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:id="@+id/boxcalistenia"
-    android:layout_height="wrap_content"
-    android:layout_width="match_parent">
-
-    <View
-        android:id="@+id/principal"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:background="#053F5C"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="@id/boxcalistenia"
-        app:layout_constraintRight_toRightOf="@id/boxcalistenia"
-        app:layout_constraintTop_toTopOf="@id/boxcalistenia" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/principal"
-        android:text="Calistenia"
-        android:textColor="@color/white"
-        android:textSize="30sp" android:fontFamily="sans-serif-smallcaps"
-        android:textAlignment="gravity"
-        android:gravity="center"
-        android:letterSpacing="0.2"
-        android:textStyle="bold"
-        android:shadowColor="#A29F9F"
-        android:shadowDy="8"
-        android:shadowDx="-8"
-        android:shadowRadius="8"
-        android:padding="10sp"/>
-
+    android:layout_height="match_parent"
+    android:background="@color/background_light">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/boxInfo"
+        android:id="@+id/boxcalistenia"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/principal"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:elevation="20dp"
-        android:background="@drawable/datesbox"
-        android:animateLayoutChanges="true">
+        android:layout_height="wrap_content">
 
+        <View
+            android:id="@+id/principal"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="@drawable/header_bg"
+            app:layout_constraintLeft_toLeftOf="@id/boxcalistenia"
+            app:layout_constraintRight_toRightOf="@id/boxcalistenia"
+            app:layout_constraintTop_toTopOf="@id/boxcalistenia" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:letterSpacing="0.2"
+            android:padding="10sp"
+            android:text="Calistenia"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@id/principal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/boxInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:background="@color/background_light"
+            android:elevation="4dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/principal">
 
             <ImageView
                 android:id="@+id/imgcalistenia"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
+                android:scaleType="centerCrop"
                 android:src="@mipmap/trainigcalistenia"
-                android:background="@color/white"
-                android:layout_marginBottom="10dp"
-                app:layout_constraintTop_toTopOf="@id/boxInfo"
-                app:layout_constraintLeft_toLeftOf="parent"/>
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@id/boxInfo" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:elevation="20dp"
-            android:orientation="vertical"
-            android:padding="20dp"
-            app:layout_constraintTop_toBottomOf="@id/imgcalistenia"
-            app:layout_constraintLeft_toLeftOf="@id/boxInfo"
-            >
-
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/border_style"
-                android:lineSpacingExtra="3sp"
-                android:padding="16sp"
-                android:text="@string/defcalis"
-                android:textColor="@color/black"
-                android:textSize="15sp"
-                android:textStyle="italic"
-                android:elevation="15dp" />
-
-            <TextView
+            <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:layout_gravity="center"
-                android:padding="5dp"
-                android:background="@drawable/pressbtn"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="Ejemplo de rutina"
-                android:textColor="@color/white"
-                android:textSize="23sp"
-                android:textStyle="bold"
-                android:shadowRadius="5"
-                android:letterSpacing="0.1"
-                android:shadowDy="-3"
-                android:shadowDx="-6"
-                android:shadowColor="@color/white"
-                android:gravity="center"/>
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgcalistenia">
 
-            <ImageView
-                android:id="@+id/tablaex"
-                android:layout_width="350dp"
-                android:layout_height="210dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/border_style"
-                android:contentDescription="Rutina calistenia"
-                android:elevation="15dp"
-                android:gravity="center"
-                android:padding="5dp"
-                android:src="@mipmap/modifycalistenia" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="32dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/border_style"
-                android:elevation="15dp"
-                android:lineSpacingExtra="3sp"
-                android:padding="15sp"
-                android:text="@string/descanso"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                android:textStyle="italic" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/datesbox"
+                        android:elevation="2dp"
+                        android:lineSpacingExtra="3sp"
+                        android:padding="18dp"
+                        android:text="@string/defcalis"
+                        android:textColor="@color/text_primary"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                            android:fontFamily="@font/poppins_light" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:layout_gravity="center"
-                android:padding="5dp"
-                android:background="@drawable/pressbtn"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="Beneficios"
-                android:textColor="@color/white"
-                android:textSize="23sp"
-                android:textStyle="bold"
-                android:shadowRadius="5"
-                android:shadowDy="-3"
-                android:shadowDx="-6"
-                android:shadowColor="@color/white"
-                android:gravity="center"
-                android:letterSpacing="0.1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/pressbtn"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="center"
+                        android:letterSpacing="0.1"
+                        android:paddingVertical="12dp"
+                        android:text="Ejemplo de rutina"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="normal" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/border_style"
-                android:elevation="15dp"
-                android:lineSpacingExtra="3sp"
-                android:padding="18sp"
-                android:text="@string/bencalistenia"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                android:textStyle="italic" />
+                    <ImageView
+                        android:id="@+id/tablaex"
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/border_style"
+                        android:contentDescription="Rutina calistenia"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/modifycalistenia" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:layout_gravity="center"
-                android:padding="5dp"
-                android:background="@drawable/pressbtn"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="Tipos de ejercicios"
-                android:textColor="@color/white"
-                android:textSize="23sp"
-                android:textStyle="bold"
-                android:shadowRadius="5"
-                android:shadowDy="-3"
-                android:shadowDx="-6"
-                android:shadowColor="@color/white"
-                android:gravity="center"
-                android:letterSpacing="0.1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/datesbox"
+                        android:elevation="2dp"
+                        android:lineSpacingExtra="3sp"
+                        android:padding="16dp"
+                        android:text="@string/descanso"
+                        android:textColor="@color/text_primary"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                            android:fontFamily="@font/poppins_light" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Basico"
-                android:textColor="@color/black"
-                android:textSize="23sp"
-                android:textStyle="bold"
-                android:shadowRadius="5"
-                android:shadowDy="-3"
-                android:shadowDx="-6"
-                android:shadowColor="@color/md_grey_700"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/pressbtn"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="center"
+                        android:letterSpacing="0.1"
+                        android:paddingVertical="12dp"
+                        android:text="Beneficios"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="normal" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/border_style"
-                android:elevation="15dp"
-                android:lineSpacingExtra="3sp"
-                android:padding="18sp"
-                android:drawableStart="@drawable/flexion"
-                android:drawablePadding="5sp"
-                android:text="Ejercicios básicos: Flexiones, dominadas, fondos, sentadillas, planchas."
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Intermedio"
-                android:textColor="@color/black"
-                android:textSize="23sp"
-                android:textStyle="bold"
-                android:shadowRadius="5"
-                android:shadowDy="-3"
-                android:shadowDx="-6"
-                android:shadowColor="@color/md_grey_700"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/datesbox"
+                        android:elevation="2dp"
+                        android:lineSpacingExtra="3sp"
+                        android:padding="18dp"
+                        android:text="@string/bencalistenia"
+                        android:textColor="@color/text_primary"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                            android:fontFamily="@font/poppins_light" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/border_style"
-                android:elevation="15dp"
-                android:lineSpacingExtra="3sp"
-                android:padding="18sp"
-                android:drawableStart="@drawable/dominadas"
-                android:drawablePadding="5sp"
-                android:text="Ejercicios intermedios: Dominadas australianas, flexiones diamante, fondos en paralelas."
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Avanzado"
-                android:textColor="@color/black"
-                android:textSize="23sp"
-                android:layout_marginTop="10dp"
-                android:textStyle="bold"
-                android:shadowRadius="5"
-                android:shadowDy="-3"
-                android:shadowDx="-6"
-                android:shadowColor="@color/md_grey_700"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/pressbtn"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="center"
+                        android:letterSpacing="0.1"
+                        android:paddingVertical="12dp"
+                        android:text="Tipos de ejercicios"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="normal" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/border_style"
-                android:elevation="15dp"
-                android:lineSpacingExtra="3sp"
-                android:drawableStart="@drawable/handstand"
-                android:padding="18sp"
-                android:text="Ejercicios avanzados: Muscle-up, handstand push-ups, front lever."
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                android:drawablePadding="6sp"
-                android:textStyle="italic"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Basico"
+                        android:textColor="@color/text_primary"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="20sp"
+                        android:textStyle="normal" />
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/datesbox"
+                        android:drawableStart="@drawable/flexion"
+                        android:drawablePadding="10dp"
+                        android:elevation="2dp"
+                        android:lineSpacingExtra="3sp"
+                        android:padding="16dp"
+                        android:text="Ejercicios básicos: Flexiones, dominadas, fondos, sentadillas, planchas."
+                        android:textColor="@color/text_primary"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                            android:fontFamily="@font/poppins_light" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nota: El nivel avanzado no es recomendado para principiantes. Primero se debe dominar los dos anterirores tipos de ejercicios."
-                android:layout_marginTop="20dp"
-                android:textSize="11sp"
-                android:textColorHint="@color/black"
-                android:textStyle="bold"
-                android:textColor="#686868"
-                android:shadowRadius="2"
-                android:shadowColor="@color/black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Intermedio"
+                        android:textColor="@color/text_primary"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="20sp"
+                        android:textStyle="normal" />
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/datesbox"
+                        android:drawableStart="@drawable/dominadas"
+                        android:drawablePadding="10dp"
+                        android:elevation="2dp"
+                        android:lineSpacingExtra="3sp"
+                        android:padding="16dp"
+                        android:text="Ejercicios intermedios: Dominadas australianas, flexiones diamante, fondos en paralelas."
+                        android:textColor="@color/text_primary"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                            android:fontFamily="@font/poppins_light" />
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Avanzado"
+                        android:textColor="@color/text_primary"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="20sp"
+                        android:textStyle="normal" />
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/datesbox"
+                        android:drawableStart="@drawable/handstand"
+                        android:drawablePadding="10dp"
+                        android:elevation="2dp"
+                        android:lineSpacingExtra="3sp"
+                        android:padding="16dp"
+                        android:text="Ejercicios avanzados: Muscle-up, handstand push-ups, front lever."
+                        android:textColor="@color/text_primary"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                            android:fontFamily="@font/poppins_light" />
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Nota: El nivel avanzado no es recomendado para principiantes. Primero se debe dominar los dos anterirores tipos de ejercicios."
+                        android:textColor="@color/text_secondary"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/poppins_light"
+                        android:textStyle="normal" />
 
+                </LinearLayout>
+            </ScrollView>
 
-
-        </LinearLayout>
-
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

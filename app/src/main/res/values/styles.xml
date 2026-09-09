@@ -4,22 +4,56 @@
 
     <style name="themeApp.Healthypath" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!--Primary brand color-->
-        <item name="colorPrimary">#053F5C</item>
-        <item name="colorPrimaryVariant">#053F5C</item>
+        <item name="colorPrimary">@color/DarkBlue</item>
+        <item name="colorPrimaryVariant">@color/DarkBlue</item>
         <item name="colorOnPrimary">@color/white</item>
-        <item name="android:letterSpacing">0.1</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorSecondary">@color/SeaBlue</item>
+        <item name="colorSecondaryVariant">@color/SoftOrange</item>
         <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="statusBarBackground">?attr/colorPrimaryVariant</item>
-        <item name="android:windowFullscreen">true</item>
-        <!-- Customize your theme here. -->
-
+        <item name="android:statusBarColor">@color/DarkBlue</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/DarkBlue</item>
+        <item name="android:colorBackground">@color/background_light</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
     </style>
 
-    <style name="TextAppearance.Healthypath.SmallCaps" parent="TextAppearance.MaterialComponents.Body1">
-        <item name="fontFamily">sans-serif-smallcaps</item>
+    <style name="TextAppearance.Healthypath.Title" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="TextAppearance.Healthypath.Subtitle" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="TextAppearance.Healthypath.Body" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_light</item>
+    </style>
+
+    <style name="Widget.Healthypath.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/DarkBlue</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+    </style>
+
+    <style name="Widget.Healthypath.Button.Accent" parent="Widget.Healthypath.Button">
+        <item name="android:backgroundTint">@color/SoftOrange</item>
+    </style>
+
+    <style name="Widget.Healthypath.EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/input_edittext</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorHint">@color/text_secondary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:paddingRight">18dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
     </style>
 </resources>

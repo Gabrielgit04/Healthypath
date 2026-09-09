@@ -2,72 +2,67 @@ package com.unefa7mo.healthypath.appViews
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.ImageButton
-import android.widget.ImageView
 import android.widget.LinearLayout
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.unefa7mo.healthypath.R
 import com.unefa7mo.healthypath.activityphysique.PhysiqueActivity
 import com.unefa7mo.healthypath.chatbot.ChatbotActivity
 import com.unefa7mo.healthypath.dream.DreamActivity
 import com.unefa7mo.healthypath.nutrition.NutritionViewActivity
 
-class FirstMainActivity :AppCompatActivity() {
+class FirstMainActivity : AppCompatActivity() {
+
+    private lateinit var bottomNav: BottomNavigationView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         setContentView(R.layout.activity_first_main)
-        //Ir a activity de nutricion
-        val goNext = findViewById<com.airbnb.lottie.LottieAnimationView>(R.id.secondtouch)
-        goNext.setOnClickListener {
-            val intent = Intent(this, NutritionViewActivity::class.java)
-            startActivity(intent)
+
+        bottomNav = findViewById(R.id.bottom_nav)
+        setupBottomNav()
+
+        navegarPasajero(R.id.secondView, NutritionViewActivity::class.java)
+        navegarPasajero(R.id.secondtouch, NutritionViewActivity::class.java)
+        navegarPasajero(R.id.thirdView, PhysiqueActivity::class.java)
+        navegarPasajero(R.id.treetouch, PhysiqueActivity::class.java)
+        navegarPasajero(R.id.fourthView, DreamActivity::class.java)
+        navegarPasajero(R.id.fourtouch, DreamActivity::class.java)
+
+        findViewById<LinearLayout>(R.id.boxchat).setOnClickListener {
+            startActivity(Intent(this, ChatbotActivity::class.java))
         }
-        //Ir a activity de actividad fisica
-        val gophysique = findViewById<com.airbnb.lottie.LottieAnimationView>(R.id.treetouch)
-        gophysique.setOnClickListener {
-            val intent = Intent(this, PhysiqueActivity::class.java)
-            startActivity(intent)
-        }
-        //Ir a activity de sueño
-        val godream = findViewById<com.airbnb.lottie.LottieAnimationView>(R.id.fourtouch)
-        godream.setOnClickListener {
-            val intent = Intent(this, DreamActivity::class.java)
-            startActivity(intent)
-        }
-//Ir a activity de chatbot
-
-        fun iralChat(){
-            val goChat = findViewById<TextView>(R.id.textchat)
-            val goChatImg  = findViewById<ImageView>(R.id.imgchat)
-            val goChatBox = findViewById<LinearLayout>(R.id.boxchat)
-
-            goChat.setOnClickListener {
-                val intent = Intent(this, ChatbotActivity::class.java)
-                startActivity(intent)
-            }
-            goChatImg.setOnClickListener {
-                val intent = Intent(this, ChatbotActivity::class.java)
-                startActivity(intent)
-            }
-
-            goChatBox.setOnClickListener {
-                val intent = Intent(this, ChatbotActivity::class.java)
-                startActivity(intent)
-            }
-
-        }
-//
-        iralChat()
-
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.d("FirstMainActivity", "onDestroy")
+    override fun onResume() {
+        super.onResume()
+        bottomNav.selectedItemId = R.id.nav_home
     }
 
+    private fun setupBottomNav() {
+        bottomNav.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.nav_home -> true
+                R.id.nav_perfil -> {
+                    startActivity(Intent(this, ProfileActivity::class.java))
+                    true
+                }
+                R.id.nav_chatbot -> {
+                    startActivity(Intent(this, ChatbotActivity::class.java))
+                    true
+                }
+                else -> false
+            }
+        }
+    }
 
+    private fun navegarPasajero(id: Int, destino: Class<*>) {
+        val view = findViewById<android.view.View>(id) ?: return
+        if (view is ImageButton || view is com.airbnb.lottie.LottieAnimationView) {
+            view.setOnClickListener {
+                startActivity(Intent(this, destino))
+            }
+        }
+    }
 }

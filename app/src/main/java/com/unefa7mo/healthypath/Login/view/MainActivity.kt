@@ -11,6 +11,7 @@ import android.widget.Toast
 import com.unefa7mo.healthypath.Login.PasswordRecover.PasswordRecoverActivity
 import com.unefa7mo.healthypath.Login.base.BaseActivity
 import com.unefa7mo.healthypath.Login.interactors.SignUpInteractor
+import com.unefa7mo.healthypath.Login.Registro.RegisterActivity
 import com.unefa7mo.healthypath.R
 import com.unefa7mo.healthypath.Login.LoginApp
 import com.unefa7mo.healthypath.Login.presenter.LoginPresenter
@@ -80,7 +81,7 @@ class MainActivity : BaseActivity(), Logincontract.LoginView{
     }
 
     override fun navigateToRegister() {
-        startActivity(Intent(this, SignUpInteractor::class.java))
+        startActivity(Intent(this, RegisterActivity::class.java))
     }
 
     override fun navigateToForgotPassword() {

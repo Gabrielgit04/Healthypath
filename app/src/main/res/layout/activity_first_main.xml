@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    tools:context=".appViews.FirstMainActivity">
+
+    <View
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:background="@drawable/header_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:letterSpacing="0.1"
+        android:text="Healthypath"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textSize="26sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@id/header_title"
+        app:layout_constraintLeft_toLeftOf="@id/header_title"
+        app:layout_constraintRight_toRightOf="@id/header_title"
+        app:layout_constraintTop_toTopOf="@id/header_title"
+        tools:ignore="HardcodedText" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@id/bottom_nav"
+        app:layout_constraintTop_toBottomOf="@id/header_title">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/heredero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="28dp"
+            android:paddingBottom="36dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_salud"
+                android:layout_width="0dp"
+                android:layout_height="190dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="6dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/firstView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/saludseccion"
+                        android:pointerIcon="hand"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/health" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/scrim_bottom"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="18dp"
+                        android:paddingVertical="14dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_bold"
+                            android:letterSpacing="0.1"
+                            android:text="@string/saludseccion"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="normal" />
+
+                        <ImageView
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:contentDescription="Ir a Salud"
+                            android:src="@drawable/tabler_arrow_circle_right" />
+                    </LinearLayout>
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_nutricion"
+                android:layout_width="0dp"
+                android:layout_height="190dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="6dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_salud"
+                android:layout_marginTop="24dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/secondView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/nutricion"
+                        android:pointerIcon="hand"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/newnutri" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/scrim_bottom"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="18dp"
+                        android:paddingVertical="14dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_bold"
+                            android:letterSpacing="0.1"
+                            android:text="@string/nutricion"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="normal" />
+
+                        <ImageView
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:contentDescription="Ir a Nutrición"
+                            android:src="@drawable/tabler_arrow_circle_right" />
+                    </LinearLayout>
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_actividad"
+                android:layout_width="0dp"
+                android:layout_height="190dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="6dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_nutricion"
+                android:layout_marginTop="24dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/thirdView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/actividad"
+                        android:pointerIcon="hand"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/activityphysique" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/scrim_bottom"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="18dp"
+                        android:paddingVertical="14dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_bold"
+                            android:letterSpacing="0.1"
+                            android:text="@string/actividad_fisica"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="normal" />
+
+                        <ImageView
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:contentDescription="Ir a Actividad Física"
+                            android:src="@drawable/tabler_arrow_circle_right" />
+                    </LinearLayout>
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_sueno"
+                android:layout_width="0dp"
+                android:layout_height="190dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="6dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_actividad"
+                android:layout_marginTop="24dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/fourthView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/sue_o"
+                        android:pointerIcon="hand"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/sueno" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/scrim_bottom"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="18dp"
+                        android:paddingVertical="14dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_bold"
+                            android:letterSpacing="0.1"
+                            android:text="@string/sue_o"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="normal" />
+
+                        <ImageView
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:contentDescription="Ir a Sueño"
+                            android:src="@drawable/tabler_arrow_circle_right" />
+                    </LinearLayout>
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/firsttouch"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:clickable="false"
+                android:focusable="false"
+                app:layout_constraintBottom_toBottomOf="@id/card_salud"
+                app:layout_constraintLeft_toLeftOf="@id/card_salud"
+                app:layout_constraintRight_toRightOf="@id/card_salud"
+                app:layout_constraintTop_toTopOf="@id/card_salud"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/touchscreen" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/secondtouch"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:clickable="false"
+                android:focusable="false"
+                app:layout_constraintBottom_toBottomOf="@id/card_nutricion"
+                app:layout_constraintLeft_toLeftOf="@id/card_nutricion"
+                app:layout_constraintRight_toRightOf="@id/card_nutricion"
+                app:layout_constraintTop_toTopOf="@id/card_nutricion"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/touchscreen" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/treetouch"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:clickable="false"
+                android:focusable="false"
+                app:layout_constraintBottom_toBottomOf="@id/card_actividad"
+                app:layout_constraintLeft_toLeftOf="@id/card_actividad"
+                app:layout_constraintRight_toRightOf="@id/card_actividad"
+                app:layout_constraintTop_toTopOf="@id/card_actividad"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/touchscreen" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/fourtouch"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:clickable="false"
+                android:focusable="false"
+                app:layout_constraintBottom_toBottomOf="@id/card_sueno"
+                app:layout_constraintLeft_toLeftOf="@id/card_sueno"
+                app:layout_constraintRight_toRightOf="@id/card_sueno"
+                app:layout_constraintTop_toTopOf="@id/card_sueno"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/touchscreen" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/SoftOrange"
+        app:elevation="8dp"
+        app:itemIconTint="@color/nav_item_color"
+        app:itemTextColor="@color/nav_item_color"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
